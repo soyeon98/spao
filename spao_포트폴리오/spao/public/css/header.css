@@ -1,0 +1,151 @@
+#header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: transparent;
+}
+#header .container {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  height: 100%;
+}
+#header .container .gap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#header .container .gap .left {
+  width: 130px;
+  height: 100%;
+}
+#header .container .gap .left .logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#header .container .gap .left .logo a {
+  width: 100%;
+  height: 38px;
+  display: block;
+}
+#header .container .gap .left .logo a img {
+  width: auto;
+}
+#header .container .gap .center {
+  width: 1180px;
+  height: 100%;
+  padding: 0 0 0 35px;
+}
+#header .container .gap .center > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#header .container .gap .center > ul > li {
+  height: 100%;
+  margin: 0 20px;
+}
+#header .container .gap .center > ul > li > a {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  padding: 1.5px 0 0 0;
+}
+#header .container .gap .center > ul > li > a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: #1a1a1a;
+  transition: all 0.3s;
+}
+#header .container .gap .center > ul > li > a:hover::after {
+  width: 100%;
+}
+#header .container .gap .center > ul > li:nth-child(1) a {
+  color: rgb(196, 30, 32);
+}
+#header .container .gap .center > ul > li:nth-child(2) a {
+  color: #183582;
+}
+#header .container .gap .right {
+  width: 400px;
+  height: 100%;
+  padding: 0 0 0 180px;
+}
+#header .container .gap .right > ul {
+  display: flex;
+  height: 100%;
+}
+#header .container .gap .right > ul > li {
+  height: 100%;
+  padding: 0 0 0 32px;
+}
+#header .container .gap .right > ul > li > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#header .container .gap .right > ul > li > a .img {
+  width: 28px;
+  height: 30px;
+  position: relative;
+  z-index: 1;
+}
+#header .container .gap .right > ul > li:nth-child(1) a .img {
+  background: url(../img/header/mypage_wht.png) no-repeat 50% 50%;
+}
+#header .container .gap .right > ul > li:nth-child(2) a .img {
+  background: url(../img/header/searchwht.png) no-repeat 50% 50%;
+}
+#header .container .gap .right > ul > li:nth-child(3) a .img {
+  background: url(../img/header/heartwht.png) no-repeat 50% 50%;
+}
+#header .container .gap .right > ul > li:nth-child(4) a .img {
+  background: url(../img/header/cart_wht.png) no-repeat 50% 50%;
+}
+#header:hover, #header.on {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+#header:hover .container .gap .left .logo a, #header.on .container .gap .left .logo a {
+  background: url(../img/header/logo_red.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#header:hover .container .gap .left .logo a img, #header.on .container .gap .left .logo a img {
+  display: none;
+}
+#header:hover .container .gap .center > ul > li > a, #header.on .container .gap .center > ul > li > a {
+  color: #353535;
+}
+#header:hover .container .gap .center > ul > li:nth-child(1) a, #header.on .container .gap .center > ul > li:nth-child(1) a {
+  color: rgb(196, 30, 32);
+}
+#header:hover .container .gap .center > ul > li:nth-child(2) a, #header.on .container .gap .center > ul > li:nth-child(2) a {
+  color: #183582;
+}
+#header:hover .container .gap .right > ul > li:nth-child(1) a .img, #header.on .container .gap .right > ul > li:nth-child(1) a .img {
+  background: url(../img/header/mypage_blk.png) no-repeat 50% 50%;
+}
+#header:hover .container .gap .right > ul > li:nth-child(2) a .img, #header.on .container .gap .right > ul > li:nth-child(2) a .img {
+  background: url(../img/header/searchblk.png) no-repeat 50% 50%;
+}
+#header:hover .container .gap .right > ul > li:nth-child(3) a .img, #header.on .container .gap .right > ul > li:nth-child(3) a .img {
+  background: url(../img/header/heartblk.png) no-repeat 50% 50%;
+}
+#header:hover .container .gap .right > ul > li:nth-child(4) a .img, #header.on .container .gap .right > ul > li:nth-child(4) a .img {
+  background: url(../img/header/cart_blk.png) no-repeat 50% 50%;
+}

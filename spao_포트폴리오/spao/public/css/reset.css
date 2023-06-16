@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font: normal 14px/1 "Noto Sans", "Roboto";
+  font: normal 14px/1 "Poppins", "Noto Sans KR", "Verdana", "Noto Sans", "Roboto";
   color: #626262;
   background: #fff;
 }
