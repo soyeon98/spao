@@ -23,7 +23,9 @@
                     width: 100%;
                     overflow: hidden;
                     .slide-wrap{
-                        width: 200%;
+                        position: relative;
+                        width: 500%;
+                        margin: 0 0 0 -150%;
                         display: flex;
                         >li{
                             width: 25%;
@@ -75,15 +77,16 @@
                                     font-weight: 500;
                                     padding: 10px 0;
                                 }
-                                .color{
+                                .color-box{
                                     width: 100%;
                                     margin: 0 5px 0 0;
-                                    >span{
+                                    .color{
                                         display: inline-block;
                                         width: 14px;
                                         height: 14px;
                                         border: 1px solid #e6e5e5;
-                                        background: #000;
+                                        background: transparent;
+                                        margin: 0 2px 0 0;
                                     }
                                 }
                                 p{

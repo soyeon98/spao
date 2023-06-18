@@ -89,7 +89,31 @@
   display: block;
   text-align: right;
   font-size: 13px;
-  color: #353535;
+  color: #606060;
+}
+#footer .container .gap .up .right .ul-box .col li a:hover {
+  color: #000;
+}
+#footer .container .gap .up .right .ul-box .col li a b {
+  font-weight: bold;
+}
+#footer .container .gap .up .right .btn-box {
+  width: 100%;
+  padding: 50px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+#footer .container .gap .up .right .btn-box button {
+  background: transparent;
+  padding: 5px 21px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #1a1a1a;
+  letter-spacing: -0.6px;
+}
+#footer .container .gap .up .right .btn-box button img {
+  padding: 0 0 2px 10px;
 }
 #footer .container .gap .bottom {
   width: 100%;
@@ -98,6 +122,25 @@
   border-top: 1px solid #e5e5e5;
   padding: 30px 0 0 0;
 }
+#footer .container .gap .bottom .b-left p {
+  font-size: 13px;
+  color: #909090;
+}
 #footer .container .gap .bottom .b-right ul {
   display: flex;
+}
+#footer .container .gap .bottom .b-right ul li {
+  padding: 0 10px 0 0;
+  color: #1a1a1a;
+  line-height: 21px;
+}
+#footer .container .gap .bottom .b-right ul li a {
+  height: 100%;
+  display: inline-flex;
+  font-size: 13px;
+  color: #000;
+}
+#footer .container .gap .bottom .b-right ul li a img {
+  width: 21px;
+  margin: 0 5px 0 0;
 }

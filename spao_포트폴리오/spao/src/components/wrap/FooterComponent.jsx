@@ -44,7 +44,7 @@ export default function FooterComponent () {
                                     <li><a href="!#">오프라인 매장안내</a></li>
                                 </ul>
                                 <ul className="col col2">
-                                    <li><a href="!#">개인정보 처리방침</a></li>
+                                    <li><a href="!#"><b>개인정보 처리방침</b></a></li>
                                     <li><a href="!#">약관안내</a></li>
                                     <li><a href="!#">윤리경영</a></li>
                                 </ul>
@@ -56,13 +56,13 @@ export default function FooterComponent () {
                                 </ul>
                             </div>
                             <div className="btn-box">
-                                <button>패밀리 사이트</button>
+                                <button>패밀리 사이트<img src="./img/main/bt_icon_family.png" alt="" /></button>
                             </div>
                         </div>
                     </div>
                     <div className="bottom">
                         <div className="b-left">
-                            <p>Copyright ⓒ 스파오닷컴 All Right Reserved</p>
+                            <p>Copyright &copy; 스파오닷컴 All Right Reserved.</p>
                         </div>
                         <div className="b-right">
                             <ul>
