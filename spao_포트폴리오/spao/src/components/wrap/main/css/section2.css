@@ -1,0 +1,169 @@
+#section2 {
+  width: 100%;
+}
+#section2 .container {
+  width: 100%;
+  max-width: 1712px;
+  margin: 0 auto;
+}
+#section2 .container .gap {
+  width: 100%;
+}
+#section2 .container .gap .title {
+  width: 100%;
+  padding: 80px 0 50px 0;
+}
+#section2 .container .gap .title h2 {
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 42px;
+  font-weight: 700;
+}
+#section2 .container .gap .content {
+  width: 100%;
+}
+#section2 .container .gap .content .nav-box {
+  padding: 0 0 40px 0;
+}
+#section2 .container .gap .content .nav-box ul {
+  display: flex;
+  justify-content: center;
+}
+#section2 .container .gap .content .nav-box ul li {
+  margin: 0 20px;
+}
+#section2 .container .gap .content .nav-box ul li button {
+  position: relative;
+  background: #fff;
+  border: 0;
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: -1.5px;
+  transition: all 0.3s;
+}
+#section2 .container .gap .content .nav-box ul li button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #1a1a1a;
+}
+#section2 .container .gap .content .nav-box ul li button::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  width: 7px;
+  height: 7px;
+  background: transparent;
+  border-radius: 50%;
+}
+#section2 .container .gap .content .nav-box ul li button.on::after {
+  width: 100%;
+}
+#section2 .container .gap .content .nav-box ul li button.on::before {
+  background: #c41e20;
+}
+#section2 .container .gap .content .best-product {
+  width: 100%;
+}
+#section2 .container .gap .content .best-product > ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#section2 .container .gap .content .best-product > ul > li {
+  width: 25%;
+}
+#section2 .container .gap .content .best-product > ul > li .img-box {
+  width: 100%;
+}
+#section2 .container .gap .content .best-product > ul > li .img-box a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#section2 .container .gap .content .best-product > ul > li .img-box a .img {
+  position: relative;
+  width: 100%;
+}
+#section2 .container .gap .content .best-product > ul > li .img-box a .img img {
+  width: 411px;
+}
+#section2 .container .gap .content .best-product > ul > li .img-box a .img img:hover {
+  opacity: 0.8;
+}
+#section2 .container .gap .content .best-product > ul > li .img-box a .img .num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgb(232, 100, 52);
+  color: #fff;
+  font-size: 22px;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box {
+  width: 100%;
+  padding: 20px 0 20px 10px;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box a {
+  position: relative;
+  width: 100%;
+  padding: 0 10% 0 0;
+  display: block;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../../public/img/main/product_heart.png) no-repeat 95% 50%;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box a h2 {
+  width: 100%;
+  color: #1a1a1a;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 17px;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box h3 {
+  font-size: 22px;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 10px 0;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box .color {
+  width: 100%;
+  margin: 0 5px 0 0;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box .color > span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #e6e5e5;
+  background: #000;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box p {
+  padding: 18px 0 10px 0;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+#section2 .container .gap .content .best-product > ul > li .info-box .gender > span {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px;
+}

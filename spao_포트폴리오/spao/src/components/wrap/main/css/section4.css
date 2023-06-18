@@ -1,0 +1,15 @@
+#section4 {
+  width: 100%;
+}
+#section4 .container {
+  width: 100%;
+  padding: 130px 0 50px 0;
+}
+#section4 .container .gap {
+  width: 100%;
+  display: flex;
+}
+#section4 .container .gap a {
+  display: block;
+  width: 50%;
+}

@@ -1,11 +1,11 @@
-#section2{
+#section3{
     width: 100%;
     .container{
         width: 100%;
         max-width: 1712px;
         margin: 0 auto;
         .gap{
-            width: 100%;     
+            width: 100%;
             .title{
                 width: 100%;
                 padding: 80px 0 50px 0;
@@ -16,62 +16,15 @@
                     font-weight: 700;
                 }
             }
-            .content{
+            .slide-container{
                 width: 100%;
-                .nav-box{
-                    padding: 0 0 40px 0;
-                    ul{
-                        display: flex;
-                        justify-content: center;
-                        li{
-                            margin: 0 20px;
-                            button{
-                                position: relative;
-                                background: #fff;
-                                border: 0;
-                                color: #1a1a1a;
-                                font-size: 20px;
-                                font-weight: 600;
-                                line-height: 38px;
-                                letter-spacing: -1.5px;
-                                transition: all 0.3s;
-                                &::after{
-                                    content: '';
-                                    position: absolute;
-                                    width: 0;
-                                    height: 3px;
-                                    bottom: 0;
-                                    left: 0;
-                                    background: #1a1a1a;
-                                }
-                                &::before{
-                                    content: '';
-                                    position: absolute;
-                                    top: 3px;
-                                    right: -10px;
-                                    width: 7px;
-                                    height: 7px;
-                                    background:  transparent;
-                                    border-radius: 50%;
-                                }
-                                &.on{
-                                    &::after{
-                                        width: 100%;
-                                    }
-                                    &::before{
-                                        background:  #c41e20;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .best-product{
+                position: relative;
+                .slide-view{
                     width: 100%;
-                    >ul{
-                        width: 100%;
+                    overflow: hidden;
+                    .slide-wrap{
+                        width: 200%;
                         display: flex;
-                        flex-flow: row wrap;
                         >li{
                             width: 25%;
                             .img-box{
@@ -80,30 +33,12 @@
                                     width: 100%;
                                     display: flex;
                                     justify-content: center;
-                                    .img{
-                                        position: relative;
-                                        width: 100%;
-                                        img{
-                                            width: 411px;
-                                            &:hover{
-                                                opacity: 0.8;
-                                            }
-                                        }
-                                        .num{
-                                            position: absolute;
-                                            top: 0;
-                                            left: 0;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            width: 50px;
-                                            height: 50px;
-                                            background: rgb(232, 100, 52);
-                                            color: #fff;
-                                            font-size: 22px;
+                                    img{
+                                        width: 413px;
+                                        &:hover{
+                                            opacity: 0.8;
                                         }
                                     }
-
                                 }
 
                             }
@@ -170,7 +105,22 @@
                         }
                     }
                 }
+                .prev-btn{
+                    position: absolute;
+                    top: 50%;
+                    margin: -110px 0 0 0;
+                    left: -60px;
+                    
+                }
+                .next-btn{
+                    position: absolute;
+                    top: 50%;
+                    margin: -110px 0 0 0;
+                    right: -60px;
+                 
+                }
             }
         }
     }
+
 }
