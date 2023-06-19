@@ -7,9 +7,9 @@ export default function Section3Component () {
 
     const [state,setState] = React.useState({
         신상품:[],
-        n:0,
-        cnt:0
+        n:0
     });
+   
     const slideWrap = React.useRef();
   
 
@@ -43,8 +43,8 @@ export default function Section3Component () {
         const $slideWrap =$('#section3 .slide-wrap');
         const $leftArrowBtn = $('#section3 .prev-btn');
         const $rightArrowBtn = $('#section3 .next-btn');
-        let cnt=state.cnt;
-        let n=state.n/2
+        let cnt=0;
+       
         $slideWrap.css({width:`${25*state.n}%`});
         //1. 메인슬라이드함수
         function mainSlide(){
@@ -118,7 +118,7 @@ export default function Section3Component () {
                                                     <span>{item.성별}</span>
                                                 </div>
                                             </div>
-                                        </li>
+                                            </li>
                                         )
 
                                     })

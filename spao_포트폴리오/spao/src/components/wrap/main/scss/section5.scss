@@ -1,0 +1,161 @@
+#section5{
+    width: 100%;
+    .container{
+        width: 100%;
+        max-width: 1712px;
+        margin: 0 auto;
+        .gap{
+            width: 100%;
+            .title{
+                width: 100%;
+                padding: 80px 0 50px 0;
+                h2{
+                    text-align: center;
+                    color: #1a1a1a;
+                    font-size: 42px;
+                    font-weight: 700;
+                }
+            }
+            .slide-container{
+                width: 100%;
+                position: relative;
+                padding: 0 0 80px 0;
+                .slide-view{
+                    width: 100%;
+                    overflow: hidden;
+                    .slide-wrap{
+                        position: relative;
+                        width: 800%;
+                       
+                        display: flex;
+                        >li{
+                            width: 33.3333%;
+                            margin: 0 5px;
+                            .img-box{
+                                width: 100%;
+                                a{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    img{
+                                        width: 100%;
+                                        &:hover{
+                                            opacity: 0.8;
+                                        }
+                                    }
+                                }
+
+                            }
+                            .info-box{
+                                width: 100%;
+                                padding: 20px 0 20px 10px;
+                                a{
+                                    position: relative;
+                                    width: 100%;
+                                    padding: 0 10% 0 0;
+                                    display: block;
+                                    &::after{
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: url(../../../../../public/img/main/product_heart.png) no-repeat 95% 50%;
+                                    }
+                                    h2{
+                                        width: 100%;
+                                        color: #1a1a1a;
+                                        font-size: 16px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        line-height: 17px;
+                                    }
+                                }
+                                h3{
+                                    font-size: 22px;
+                                    color: #1a1a1a;
+                                    font-weight: 500;
+                                    padding: 10px 0;
+                                }
+                                .color-box{
+                                    width: 100%;
+                                    margin: 0 5px 0 0;
+                                    .color{
+                                        display: inline-block;
+                                        width: 14px;
+                                        height: 14px;
+                                        border: 1px solid #e6e5e5;
+                                        background: transparent;
+                                        margin: 0 2px 0 0;
+                                    }
+                                }
+                                p{
+                                    padding: 18px 0 10px 0;
+                                    font-size: 14px;
+                                    color: #9a9a9a;
+                                }
+                                .gender{
+                                  
+                                    >span{
+                                        display: inline-block;
+                                        background: #000;
+                                        color: #fff;
+                                        font-size: 11px;
+                                        padding: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .prev-btn{
+                    position: absolute;
+                    top: 50%;
+                    margin: -110px 0 0 0;
+                    left: -70px;
+                    opacity: 0.5;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+                .next-btn{
+                    position: absolute;
+                    top: 50%;
+                    margin: -110px 0 0 0;
+                    right: -70px;
+                    opacity: 0.5;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+                .page-btn-box{
+                    width: 100%;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 0;
+                    z-index: 5;
+                    display: flex;
+                    justify-content: center;
+                    span{
+                        display: inline-flex;
+                        width: 13px;
+                        height: 13px;
+                        margin: 0 4px;
+                        .page-btn{
+                            width: 100%;
+                            height: 100%;
+                            background:#a5a5a5 ;
+                            border-radius: 50%;
+                            &.on{
+                                background:#1a1a1a ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

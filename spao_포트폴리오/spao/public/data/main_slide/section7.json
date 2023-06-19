@@ -1,0 +1,21 @@
+{
+    "룩북":[
+        {"제품코드":"PRODUCT_C0006","이미지":"./img/main/section7_slide06.jpg","이름":"FEEL YOUR ENERGY","이미지설명":"윈드브레이커와 다시 달릴 계절"},
+        {"제품코드":"PRODUCT_C0007","이미지":"./img/main/section7_slide07.jpg","이름":"MOOD OF MINIMAL","이미지설명":"차분함과 간결함으로 채운 미니멀룩"},
+        {"제품코드":"PRODUCT_C0008","이미지":"./img/main/section7_slide08.jpg","이름":"PAJAMA OLYMPIAD","이미지설명":"집안에서 펼쳐지는 파자마 올림피아드!"},
+        {"제품코드":"PRODUCT_C0009","이미지":"./img/main/section7_slide09.jpg","이름":"WALK IN THE CAMPUS","이미지설명":"캠퍼스에서 펼쳐지는 아메리칸 캐주얼 무드"},
+        {"제품코드":"PRODUCT_C0001","이미지":"./img/main/section7_slide01.jpg","이름":"CITYBOY LOVES DENIM","이미지설명":"도시의 청춘을 위한 데님 컬렉션"},
+        {"제품코드":"PRODUCT_C0002","이미지":"./img/main/section7_slide02.jpg","이름":"스파오 X 달빛천사","이미지설명":"영원한 아이돌 풀문의 18년만의 귀환"},
+        {"제품코드":"PRODUCT_C0003","이미지":"./img/main/section7_slide03.jpg","이름":"WARM BREEZE SWEATER","이미지설명":"계절을 채우는 햇살과 바람을 입은 스웨터"},
+        {"제품코드":"PRODUCT_C0004","이미지":"./img/main/section7_slide04.jpg","이름":"ROYAL BLUE SPORTS CLUB","이미지설명":"코트와 일상에서 선명히 빛나는 테니스 플레이어 룩"},
+        {"제품코드":"PRODUCT_C0005","이미지":"./img/main/section7_slide05.jpg","이름":"ROMANTIC Office","이미지설명":"일상을 바라보는 로맨틱한 시선"},
+        {"제품코드":"PRODUCT_C0006","이미지":"./img/main/section7_slide06.jpg","이름":"FEEL YOUR ENERGY","이미지설명":"윈드브레이커와 다시 달릴 계절"},
+        {"제품코드":"PRODUCT_C0007","이미지":"./img/main/section7_slide07.jpg","이름":"MOOD OF MINIMAL","이미지설명":"차분함과 간결함으로 채운 미니멀룩"},
+        {"제품코드":"PRODUCT_C0008","이미지":"./img/main/section7_slide08.jpg","이름":"PAJAMA OLYMPIAD","이미지설명":"집안에서 펼쳐지는 파자마 올림피아드!"},
+        {"제품코드":"PRODUCT_C0009","이미지":"./img/main/section7_slide09.jpg","이름":"WALK IN THE CAMPUS","이미지설명":"캠퍼스에서 펼쳐지는 아메리칸 캐주얼 무드"},
+        {"제품코드":"PRODUCT_C0001","이미지":"./img/main/section7_slide01.jpg","이름":"CITYBOY LOVES DENIM","이미지설명":"도시의 청춘을 위한 데님 컬렉션"},
+        {"제품코드":"PRODUCT_C0002","이미지":"./img/main/section7_slide02.jpg","이름":"스파오 X 달빛천사","이미지설명":"영원한 아이돌 풀문의 18년만의 귀환"},
+        {"제품코드":"PRODUCT_C0003","이미지":"./img/main/section7_slide03.jpg","이름":"WARM BREEZE SWEATER","이미지설명":"계절을 채우는 햇살과 바람을 입은 스웨터"},
+        {"제품코드":"PRODUCT_C0004","이미지":"./img/main/section7_slide04.jpg","이름":"ROYAL BLUE SPORTS CLUB","이미지설명":"코트와 일상에서 선명히 빛나는 테니스 플레이어 룩"}
+    ]
+}
