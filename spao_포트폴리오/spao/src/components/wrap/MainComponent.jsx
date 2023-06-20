@@ -6,6 +6,7 @@ import Section4Component from './main/Section4Component';
 import Section5Component from './main/Section5Component';
 import Section6Component from './main/Section6Component';
 import Section7Component from './main/Section7Component';
+import Section8Component from './main/Section8Component';
 
 export default function MainComponent () {
     return (
@@ -17,6 +18,7 @@ export default function MainComponent () {
           <Section5Component/>
           <Section6Component/>
           <Section7Component/>
+          <Section8Component/>
         </main>
     );
 };

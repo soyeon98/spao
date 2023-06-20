@@ -44,6 +44,7 @@ export default function Section3Component () {
         const $leftArrowBtn = $('#section3 .prev-btn');
         const $rightArrowBtn = $('#section3 .next-btn');
         let cnt=0;
+        let setId=0;
        
         $slideWrap.css({width:`${25*state.n}%`});
         //1. 메인슬라이드함수
@@ -68,17 +69,27 @@ export default function Section3Component () {
                 mainSlide();
             }
         }
+
+        function autoTimer(){
+            setId=setInterval(nextCount, 5000); 
+            }  
+            autoTimer();
         //3. 다음 화살버튼 클릭 이벤트
         $leftArrowBtn.on({
             click(e){
                 e.preventDefault();
+                clearInterval(setId);
                 prevCount();
+                autoTimer();
             }
+            
         });
         $rightArrowBtn.on({
             click(e){
                 e.preventDefault();
+                clearInterval(setId);
                 nextCount();
+                autoTimer();
             }
         });
 
