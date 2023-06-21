@@ -1,0 +1,104 @@
+#section1 {
+  width: 100%;
+  height: 100%;
+}
+#section1 .container {
+  width: 100%;
+}
+#section1 .container .gap {
+  width: 100%;
+}
+#section1 .container .gap .slide-container {
+  width: 100%;
+  position: relative;
+}
+#section1 .container .gap .slide-container .slide-view {
+  width: 100%;
+}
+#section1 .container .gap .slide-container .slide-view .slide-wrap {
+  width: 100%;
+  height: 837px;
+  position: relative;
+  pointer-events: none;
+}
+#section1 .container .gap .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#section1 .container .gap .slide-container .slide-view .slide-wrap .slide:nth-child(1) {
+  z-index: 2;
+}
+#section1 .container .gap .slide-container .slide-view .slide-wrap .slide:nth-child(2) {
+  z-index: 1;
+}
+#section1 .container .gap .slide-container .slide-view .slide-wrap .slide img {
+  width: 100%;
+}
+#section1 .container .gap .slide-container .prev-btn-s1 {
+  display: block;
+  width: 35px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  margin: -40px 0 0 0;
+  z-index: 5;
+  opacity: 0.2;
+}
+#section1 .container .gap .slide-container .prev-btn-s1:hover {
+  opacity: 1;
+}
+#section1 .container .gap .slide-container .prev-btn-s1 i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../../public/img/main/left-arrow.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#section1 .container .gap .slide-container .next-btn-s1 {
+  display: block;
+  width: 35px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin: -40px 0 0 0;
+  z-index: 5;
+  opacity: 0.2;
+}
+#section1 .container .gap .slide-container .next-btn-s1:hover {
+  opacity: 1;
+}
+#section1 .container .gap .slide-container .next-btn-s1 i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../../public/img/main/right-arrow.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#section1 .container .gap .slide-container .page-btn-box {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+#section1 .container .gap .slide-container .page-btn-box span {
+  display: inline-flex;
+  width: 13px;
+  height: 13px;
+  margin: 0 4px;
+}
+#section1 .container .gap .slide-container .page-btn-box span .page-btn {
+  width: 100%;
+  height: 100%;
+  background: #a5a5a5;
+  border-radius: 50%;
+}
+#section1 .container .gap .slide-container .page-btn-box span .page-btn.on {
+  background: #1a1a1a;
+}

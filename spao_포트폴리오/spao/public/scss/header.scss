@@ -1,4 +1,6 @@
-#header{
+#wrap{
+    position: relative;
+    #header{
     position: fixed;
     z-index: 10;
     top: 0;
@@ -74,12 +76,164 @@
                         &:nth-child(1){
                             a{
                                 color:rgb(196, 30, 32);
-                                
                             }
                         }
                         &:nth-child(2){
                             a{
                                 color: #183582;
+                            }
+                        }
+                        .sub{
+                            position: absolute;
+                            display: none;
+                            z-index: 5;                        
+                            top: 90px;
+                            left: 0;
+                            background: #fff;
+                            padding: 50px 0 60px 0;
+                            width: 100%;
+                            transition: all 0.1s;
+                            .container{
+                                width: 100%;
+                                max-width: 1330px;
+                                margin: 0 auto;
+                                display: flex;
+                                .col1,.col2{
+                                    width: 180px;
+                                    font-size: 14px;
+                                    >li{
+                                        width: 100%;
+                                        padding: 8px 0;
+                                        >a{
+                                            height: 100%;
+                                            display:inline-flex;
+                                            position: relative;
+                                            color: #1a1a1a;
+                                            letter-spacing: -0.6px;
+                                            z-index: 1;
+                                            &.review{
+                                                margin:0 0 20px 0;
+                                            }
+                                            &::after{
+                                                content: '';
+                                                position: absolute;
+                                                z-index: 1;
+                                                top: 3px;
+                                                right: -1px;
+                                                width: 7px;
+                                                height: 7px;
+                                                background: #c41e20;
+                                                border-radius: 50%;
+                                                opacity: 0;
+                                                transition: all 0.3s;
+                                            }
+                                            &:hover{
+                                                &::after{
+                                                    top: -3px;
+                                                    right: -11px;
+                                                    opacity: 1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .col2{
+                                    padding: 0 0 0 40px;
+                                    border-left: 1px solid #e5e5e5;
+                                    li{
+                                        a{
+                                            color: #808080;
+                                            &:hover{
+                                                color: #1a1a1a;
+                                            }
+                                        }
+                                    }
+                                  
+                                }
+                                .col3{
+                                    display: flex;
+                                    width: 100%;
+                                    justify-content: flex-end;
+                                    li{
+                                       margin: 0 10px;
+                                        a{
+                                            position: relative;
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            .bg8-box{
+                                                width: 100%;
+                                                height: 100%;
+                                                position: relative;
+                                                z-index: 2;
+                                                img{
+                                                    width: 200px;
+                                                    height: 296px;
+                                                }
+                                                &::after{
+                                                    content: '';
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    top: 0;
+                                                    left: 0;
+                                                    position: absolute;
+                                                    display: block;
+                                                    z-index: 3;
+                                                    background-color: rgba(0,0,0,0);
+                                                    transition: all 0.5s;
+                                                }
+                                            }
+                                            .txt-box{
+                                                width: 100%;
+                                                position: absolute;
+                                                z-index: 3;
+                                                top: 50%;
+                                                left: 0;
+                                                text-align: center;
+                                                color: transparent;
+                                                padding: 0 15px;
+                                                margin: -20px 0 0 0;
+                                                h3{
+                                                    overflow: hidden;
+                                                    text-overflow: ellipsis;
+                                                    white-space: nowrap;
+                                                    font-size: 14px;
+                                                    line-height: 22px;
+                                                    padding: 0 0 5px 0;
+                                                   
+                                                }
+                                                h4{
+                                                    font-size: 14px;
+                                                    line-height: 18px;
+                                                    &.pr{
+                                                        text-decoration: line-through;
+                                                        font-size: 13px;
+                                                        
+                                                    }
+                                                }
+
+                                            }
+                                            &:hover{
+                                                .txt-box{
+                                                    color: #fff;
+                                                }
+                                                .bg8-box{
+                                                    &::after{
+                                                        background-color: rgba(0,0,0,0.3);
+                                                    }
+                                                   
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.sub5{
+                                .container{
+                                    .col2{
+                                        margin: 80px 0 0 40px; 
+                                    }
+                                }
                             }
                         }
                     }
@@ -93,8 +247,10 @@
                     display: flex;
                     height: 100%;
                     >li{
+                        width: 100%;
                         height: 100%;
-                        padding: 0 0 0 32px;
+                        margin: 0 0 0 32px;
+                        position: relative;
                         >a{
                             height: 100%;
                             display: flex;
@@ -124,6 +280,21 @@
                         &:nth-child(4){
                             a{
                                 .img{background: url(../img/header/cart_wht.png) no-repeat 50% 50%;}
+                            }
+                        }
+                        .login-sub{
+                            position: absolute;
+                            background: #fff;
+                            z-index: 5;
+                            top: 90px;
+                            left: 0;
+                            width: 100%;
+                            ul{
+                                li{
+                                    a{
+
+                                    }
+                                }
                             }
                         }
                     }
@@ -194,5 +365,18 @@
                 }
             }
         }
+    }
+    &.up{
+        &::after{
+            content: '';
+            position: absolute;
+            top: auto;
+            z-index: -1;
+            left: 0;
+            width: 100%;
+            height: 10000px;
+            background-color: rgba(0,0,0,0.3);
+        }
+    }
     }
 }

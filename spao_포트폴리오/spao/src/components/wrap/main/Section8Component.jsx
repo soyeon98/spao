@@ -1,6 +1,7 @@
 import React from 'react';
 import './scss/section8.scss';
 import axios from 'axios';
+import $ from 'jquery';
 
 export default function Section8Component () {
 
@@ -29,6 +30,63 @@ export default function Section8Component () {
         })
         
     },[state.n]);
+
+    React.useEffect(() => {
+
+        const $slideWrap = $('#section8 .slide-wrap');
+        const $leftArrowBtn = $('#section8 .prev-btn-s8');
+        const $rightArrowBtn = $('#section8 .next-btn-s8');
+        let cnt = 0;
+        let setId = 0;
+
+        $slideWrap.css({ width: `${20 * state.n}%` });
+        //1. 메인슬라이드함수
+        function mainSlide() {
+            $slideWrap.stop().animate({ left: `${cnt * -20}%` }, 600, function () {
+                if (cnt > 9) cnt = 0;
+                if (cnt < 0) cnt = 9;
+                $slideWrap.stop().animate({ left: `${-20 * cnt}%` }, 0);
+            });
+        }
+        //2-1. 다음 카운트 함수
+        function nextCount() {
+            if (!$slideWrap.is(':animated')) {
+                cnt++;
+                mainSlide();
+            }
+        }
+        //2-2. 이전 카운트 함수
+        function prevCount() {
+            if (!$slideWrap.is(':animated')) {
+                cnt--;
+                mainSlide();
+            }
+        }
+
+        function autoTimer() {
+            setId = setInterval(nextCount, 5000);
+        }
+        autoTimer();
+        //3. 다음 화살버튼 클릭 이벤트
+        $leftArrowBtn.on({
+            click(e) {
+                e.preventDefault();
+                clearInterval(setId);
+                prevCount();
+                autoTimer();
+            }
+
+        });
+        $rightArrowBtn.on({
+            click(e) {
+                e.preventDefault();
+                clearInterval(setId);
+                nextCount();
+                autoTimer();
+            }
+        });
+
+    }, [state.n]);
 
     return (
         <section id="section8">

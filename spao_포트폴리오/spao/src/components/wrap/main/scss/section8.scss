@@ -25,6 +25,7 @@
                     overflow: hidden;
                     .slide-wrap{
                         width: 100%*2;
+                        position: relative;
                         display: flex;
                         justify-content: center;
                         .slide{

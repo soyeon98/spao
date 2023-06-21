@@ -1,0 +1,157 @@
+#section8 {
+  width: 100%;
+  padding: 0 0 150px 0;
+}
+#section8 .container {
+  width: 100%;
+  max-width: 1712.69px;
+  margin: 0 auto;
+}
+#section8 .container .gap {
+  width: 100%;
+}
+#section8 .container .gap .title {
+  width: 100%;
+  padding: 80px 0 50px 0;
+}
+#section8 .container .gap .title h2 {
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 42px;
+  font-weight: 700;
+}
+#section8 .container .gap .slide-container {
+  width: 100%;
+  position: relative;
+}
+#section8 .container .gap .slide-container .slide-view {
+  width: 100%;
+  overflow: hidden;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap {
+  width: 200%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide {
+  width: 20%;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .bg8-box {
+  position: relative;
+  width: 326.6px;
+  height: 100%;
+  z-index: 2;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .bg8-box img {
+  width: 326.6px;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .bg8-box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  z-index: 3;
+  transition: all 0.5s;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .txt-box {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: all 0.5s;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .txt-box .tag {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 23px;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .txt-box .bt-name {
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0 25px 10px 25px;
+  font-size: 16px;
+  line-height: 20px;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .txt-box .bt-name .row1 {
+  display: flex;
+  align-items: center;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .txt-box .bt-name .row1 span {
+  display: inline-flex;
+  align-items: center;
+  width: 1px;
+  height: 13px;
+  margin: 0 13px;
+  background: #fff;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .txt-box .bt-name .row2 {
+  text-align: right;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a .txt-box .bt-name .row2 span {
+  display: inline-flex;
+  align-items: center;
+  width: 1px;
+  height: 13px;
+  margin: 0 13px;
+  background: #fff;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a:hover .txt-box {
+  display: block;
+}
+#section8 .container .gap .slide-container .slide-view .slide-wrap .slide a:hover .bg8-box::after {
+  background: rgba(0, 0, 0, 0.3);
+}
+#section8 .container .gap .slide-container .prev-btn-s8 {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  margin: -23px 0 0 0;
+  left: -60px;
+}
+#section8 .container .gap .slide-container .prev-btn-s8 a img {
+  width: 35px;
+  height: 60px;
+  opacity: 0.5;
+}
+#section8 .container .gap .slide-container .prev-btn-s8 a img:hover {
+  opacity: 1;
+}
+#section8 .container .gap .slide-container .next-btn-s8 {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  margin: -23px 0 0 0;
+  right: -60px;
+}
+#section8 .container .gap .slide-container .next-btn-s8 a img {
+  width: 35px;
+  height: 60px;
+  opacity: 0.5;
+}
+#section8 .container .gap .slide-container .next-btn-s8 a img:hover {
+  opacity: 1;
+}
