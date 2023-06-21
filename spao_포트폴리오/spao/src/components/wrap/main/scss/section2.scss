@@ -98,7 +98,7 @@
                                             align-items: center;
                                             width: 50px;
                                             height: 50px;
-                                            background: rgb(232, 100, 52);
+                                            background: #e86434;
                                             color: #fff;
                                             font-size: 22px;
                                         }
@@ -139,16 +139,29 @@
                                     color: #1a1a1a;
                                     font-weight: 500;
                                     padding: 10px 0;
+                                    .price{
+                                        text-decoration: line-through;
+                                        color: #b9b9b9;
+                                        font-size: 16px;
+                                        padding: 0 5px;
+                                        font-weight: 400;
+                                    }
+                                    .rate{
+                                        color: #c41e20;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                    }
                                 }
                                 .color{
                                     width: 100%;
-                                    margin: 0 5px 0 0;
+                                  
                                     >span{
                                         display: inline-block;
+                                        margin: 0 3px 0 0;
                                         width: 14px;
                                         height: 14px;
                                         border: 1px solid #e6e5e5;
-                                        background: #000;
+                                        background: transparent;
                                     }
                                 }
                                 p{
