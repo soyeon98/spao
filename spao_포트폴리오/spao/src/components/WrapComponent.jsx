@@ -1,14 +1,16 @@
 import React from 'react';
-import FooterComponent from './wrap/FooterComponent';
-import HeaderComponent from './wrap/HeaderComponent';
-import MainComponent from './wrap/MainComponent';
+import {HashRouter, Routes, Route}  from 'react-router-dom';
+import IntroComponent from './wrap/IntroComponent';
 
 export default function WrapComponent ()  {
     return (
         <div id='wrap'>
-            <HeaderComponent/>
-            <MainComponent/>
-            <FooterComponent/>
+
+            <HashRouter>
+                <Routes>
+                    <Route path='/*'  element={<IntroComponent />} />
+                </Routes>
+            </HashRouter>
         </div>
     );
 };

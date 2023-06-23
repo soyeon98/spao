@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import {Link} from 'react-router-dom';
 
 export default function HeaderComponent () {
 
@@ -44,15 +45,15 @@ export default function HeaderComponent () {
                 <div className="gap">
                     <div className="left">
                         <div className="logo">
-                            <a href="!#">
+                            <Link to="/main">
                                 <img src="./img/header/logo_wht.png" alt="" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="center">
                         <ul>
-                            <li><a href="!#">할인 상품</a></li>
-                            <li><a href="!#">데님 제안서</a></li>
+                            <li><Link to="/sale">할인 상품</Link></li>
+                            <li><Link to="/denim">데님 제안서</Link></li>
                             <li><a href="!#">베스트</a></li>
                             <li className='sub-page'>
                                 <a href="!#" className='sub-up'>우먼</a>
@@ -339,12 +340,12 @@ export default function HeaderComponent () {
                         <ul>
                             <li className='sub-page'>
                                 <a href="!#"  className='sub-up'><div className="img"></div></a>
-                                <div className="login-sub">
+                                {/* <div className="login-sub">
                                     <ul>
                                         <li><a href="!#">LOGIN</a></li>
                                         <li><a href="!#">ORDER</a></li>
                                     </ul>
-                                </div>
+                                </div> */}
                             </li>
                             <li>
                                 <a href="!#"><div className="img"></div></a>
