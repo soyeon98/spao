@@ -3,8 +3,6 @@ import $, { easing } from 'jquery';
 
 export default function GoUpDownComponent(){
 
-    const [scrollTop,setScrollTop]=React.useState(0);
-
     React.useEffect(()=>{
      
         let gotopBtn = $('.gotop-btn');
@@ -22,6 +20,7 @@ export default function GoUpDownComponent(){
             click(e){
                 e.preventDefault();
                 $('html,body').stop().animate({scrollTop:footer},300);
+              
             }
         })
 
