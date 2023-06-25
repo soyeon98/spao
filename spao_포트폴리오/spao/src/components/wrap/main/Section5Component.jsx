@@ -102,6 +102,7 @@ export default function Section5Component() {
                     clearInterval(setId);
                     cnt=idx;
                     mainSlide();
+                    autoTimer();
                 }
             });
         });

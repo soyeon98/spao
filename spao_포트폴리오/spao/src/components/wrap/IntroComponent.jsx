@@ -6,6 +6,7 @@ import FooterComponent from './FooterComponent';
 import SaleProduct from './sub/SaleProduct';
 import SaleProductMen from './sub/SaleProductMen';
 import DenimComponent from './sub/DenimComponent';
+import GoUpDownComponent from './GoUpDownComponent';
 
 export default function IntroComponent  ()  {
     return (
@@ -19,6 +20,7 @@ export default function IntroComponent  ()  {
                 <Route path='/denim' element={<DenimComponent/>} />
             </Routes>
             <FooterComponent/>
+            <GoUpDownComponent/>
         </>
     );
 };

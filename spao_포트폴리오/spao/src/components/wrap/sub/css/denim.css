@@ -1,0 +1,339 @@
+#denim {
+  padding: 90px 0 100px 0;
+}
+#denim::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #aaa;
+  z-index: 1;
+}
+#denim .container {
+  width: 100%;
+}
+#denim .container .gap {
+  width: 100%;
+}
+#denim .container .gap .link-box {
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto;
+}
+#denim .container .gap .link-box ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#denim .container .gap .link-box ul li {
+  padding: 0 0 0 12px;
+  margin: 0 0 0 8px;
+  font-size: 13px;
+  color: #909090;
+  line-height: 30px;
+}
+#denim .container .gap .link-box ul li a {
+  font-size: 13px;
+  color: #909090;
+}
+#denim .container .gap .link-box ul li:nth-child(2), #denim .container .gap .link-box ul li:nth-child(3) {
+  background: url(../../../../../public/img/sale/ico_path.gif) no-repeat 0 50%;
+}
+#denim .container .gap .title {
+  padding: 0 0 50px 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+#denim .container .gap .title h2 {
+  padding: 35px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  font-size: 20px;
+  color: #1a1a1a;
+  line-height: 28px;
+  font-weight: 500;
+}
+#denim .container .gap .img-box {
+  width: 100%;
+}
+#denim .container .gap .img-box img {
+  width: 100%;
+}
+#denim .container .gap .slide-container-up {
+  width: 100%;
+  margin: 0 0 50px 0;
+  position: relative;
+}
+#denim .container .gap .slide-container-up .slide-view-up {
+  width: 100%;
+  overflow: hidden;
+}
+#denim .container .gap .slide-container-up .slide-view-up .slide-wrap-up {
+  width: 900%;
+  position: relative;
+  display: flex;
+  margin: 0 0 0 -100%;
+}
+#denim .container .gap .slide-container-up .slide-view-up .slide-wrap-up .slide-review {
+  width: 100%;
+}
+#denim .container .gap .slide-container-up .slide-view-up .slide-wrap-up .slide-review img {
+  width: 100%;
+}
+#denim .container .gap .slide-container-up .left-btn-up {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  margin: -20px 0 0 0;
+  cursor: pointer;
+}
+#denim .container .gap .slide-container-up .right-btn-up {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  margin: -20px 0 0 0;
+  cursor: pointer;
+}
+#denim .container .gap .slide-container-up .page-btn-box {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+#denim .container .gap .slide-container-up .page-btn-box span {
+  display: inline-flex;
+  width: 13px;
+  height: 13px;
+  margin: 0 4px;
+}
+#denim .container .gap .slide-container-up .page-btn-box span .page-btn-up {
+  width: 100%;
+  height: 100%;
+  background: #a5a5a5;
+  border-radius: 50%;
+}
+#denim .container .gap .slide-container-up .page-btn-box span .page-btn-up.on {
+  background: #1a1a1a;
+}
+#denim .container .gap .slide-container-down {
+  width: 100%;
+  position: relative;
+}
+#denim .container .gap .slide-container-down .slide-view-down {
+  width: 100%;
+  overflow: hidden;
+}
+#denim .container .gap .slide-container-down .slide-view-down .slide-wrap-down {
+  width: 400%;
+  position: relative;
+  display: flex;
+  margin: 0 0 0 -100%;
+}
+#denim .container .gap .slide-container-down .slide-view-down .slide-wrap-down .slide-guide {
+  width: 100%;
+}
+#denim .container .gap .slide-container-down .slide-view-down .slide-wrap-down .slide-guide img {
+  width: 100%;
+}
+#denim .container .gap .slide-container-down .left-btn-down {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  margin: -8px 0 0 0;
+  cursor: pointer;
+}
+#denim .container .gap .slide-container-down .right-btn-down {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  margin: -8px 0 0 0;
+  cursor: pointer;
+}
+#denim .container .gap .slide-container-down .page-btn-box {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+#denim .container .gap .slide-container-down .page-btn-box span {
+  display: inline-flex;
+  width: 13px;
+  height: 13px;
+  margin: 0 4px;
+}
+#denim .container .gap .slide-container-down .page-btn-box span .page-btn-down {
+  width: 100%;
+  height: 100%;
+  background: #a5a5a5;
+  border-radius: 50%;
+}
+#denim .container .gap .slide-container-down .page-btn-box span .page-btn-down.on {
+  background: #1a1a1a;
+}
+#denim .container .gap .cate-box {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 70px 0 40px 0;
+}
+#denim .container .gap .cate-box ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#denim .container .gap .cate-box ul li {
+  width: 25%;
+  height: 60px;
+  padding: 0 20px;
+  border: 1px solid #e5e5e5;
+  margin-left: -1px;
+  margin-top: -1px;
+  background: url(../../../../../public/img/sale/detail_arrow.png) no-repeat 90% 50%;
+}
+#denim .container .gap .cate-box ul li a {
+  display: block;
+  height: 100%;
+  color: #707070;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+#denim .container .gap .cate-box ul li a:hover {
+  color: #1a1a1a;
+}
+#denim .container .gap .product-box {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#denim .container .gap .product-box .row {
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+#denim .container .gap .product-box .row .cate {
+  width: 100%;
+  padding: 30px 0 10px 0;
+  margin: 0 0 50px 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+#denim .container .gap .product-box .row .cate h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #2e2e2e;
+  text-align: left;
+  line-height: 37px;
+}
+#denim .container .gap .product-box .row .product {
+  width: 100%;
+}
+#denim .container .gap .product-box .row .product > ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#denim .container .gap .product-box .row .product > ul > li {
+  width: 25%;
+}
+#denim .container .gap .product-box .row .product > ul > li .img-box {
+  width: 100%;
+}
+#denim .container .gap .product-box .row .product > ul > li .img-box a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#denim .container .gap .product-box .row .product > ul > li .img-box a .img {
+  position: relative;
+  width: 343px;
+}
+#denim .container .gap .product-box .row .product > ul > li .img-box a .img img {
+  width: 343px;
+}
+#denim .container .gap .product-box .row .product > ul > li .img-box a .img img:hover {
+  opacity: 0.8;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box {
+  width: 100%;
+  padding: 20px 0 20px 10px;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box a {
+  position: relative;
+  width: 100%;
+  padding: 0 10% 0 0;
+  display: block;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../../public/img/main/product_heart.png) no-repeat 95% 50%;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box a h2 {
+  width: 100%;
+  color: #1a1a1a;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 17px;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box h3 {
+  font-size: 22px;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 10px 0;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box h3 .price {
+  text-decoration: line-through;
+  color: #b9b9b9;
+  font-size: 16px;
+  padding: 0 5px;
+  font-weight: 400;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box h3 .rate {
+  color: #c41e20;
+  font-size: 16px;
+  font-weight: 400;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box .color {
+  width: 100%;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box .color > span {
+  display: inline-block;
+  margin: 0 3px 0 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #e6e5e5;
+  background: transparent;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box p {
+  padding: 18px 0 10px 0;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box .gender > span {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-size: 11px;
+  height: 16px;
+  padding: 3px;
+}
+#denim .container .gap .product-box .row .product > ul > li .info-box .gender .set-sale {
+  background: #c41e20;
+  margin: 0 0 0 5px;
+}

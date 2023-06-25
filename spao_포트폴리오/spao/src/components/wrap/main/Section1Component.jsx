@@ -116,10 +116,9 @@ export default function section1Component() {
 
         let touchStart = 0;
         let touchEnd = 0;
-        let mouseDown = false; //마우스다운하면 true 아니면 false
+        let mouseDown = false; 
         let winWidth = $(window).innerWidth();
 
-        //데스크 용-마우스로
         $('#section1').on({
             mousedown(e) {
                 clearInterval(setId);

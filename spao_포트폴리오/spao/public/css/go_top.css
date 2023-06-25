@@ -1,0 +1,31 @@
+#upDown {
+  width: 100%;
+}
+#upDown #goTop {
+  position: fixed;
+  z-index: 8;
+  right: 40px;
+  bottom: 85px;
+  width: 45px;
+  height: 45px;
+}
+#upDown #goTop a {
+  width: 100%;
+}
+#upDown #goTop a img {
+  width: 100%;
+}
+#upDown #goDown {
+  position: fixed;
+  z-index: 8;
+  right: 40px;
+  bottom: 30px;
+  width: 45px;
+  height: 45px;
+}
+#upDown #goDown a {
+  width: 100%;
+}
+#upDown #goDown a img {
+  width: 100%;
+}

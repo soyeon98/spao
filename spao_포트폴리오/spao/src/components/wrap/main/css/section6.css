@@ -1,0 +1,55 @@
+#section6 {
+  width: 100%;
+}
+#section6 .container {
+  width: 100%;
+}
+#section6 .container .gap {
+  width: 100%;
+}
+#section6 .container .gap .title {
+  width: 100%;
+  padding: 60px 0 50px 0;
+}
+#section6 .container .gap .title h2 {
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 42px;
+  font-weight: 700;
+}
+#section6 .container .gap .content {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+#section6 .container .gap .content a {
+  width: 48%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+#section6 .container .gap .content a img {
+  width: 100%;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+}
+#section6 .container .gap .content a img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+#section6 .container .gap .content a:nth-child(2) {
+  margin: 95px 0 0 0;
+}
+#section6 .container .gap .content a p {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px 0 0 0;
+  color: #1a1a1a;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 40px;
+  background: #fff;
+}
