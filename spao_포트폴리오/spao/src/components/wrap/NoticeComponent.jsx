@@ -1,7 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 export default function NoticeComponent  ()  {
+
+    //item.content.split('\n').map(line=>{return(<span>{line}<br/></span>)}) 줄바꿔서 출력 내용
+
+    const [state, setState] = React.useState({
+        notice: []
+    });
+
+
+    React.useEffect(() => {
+        axios({
+            url: './data/notice/notice.json',
+            method: 'get'
+        })
+            .then((res) => {
+                if (res.status === 200) {
+                    
+                    setState({
+                        ...state,
+                        notice: res.data.notice
+                    });
+                    console.log(res.data.notice);
+                }
+            })
+            .catch((err) => {
+                console.log(`AXIOS 실패 ${err}`);
+            })
+
+    }, []);
+
     return (
         <div id='notice'>
             <div className="container">
@@ -17,36 +47,18 @@ export default function NoticeComponent  ()  {
                     </div>
                     <div className="content">
                         <table>
-                            <tr>
-                                <td>공지</td>
-                                <td><a href="!#">[혜택안내] 동영상 리뷰 추가 혜택 오픈 안내 (2022.04.01~)</a></td>
-                                <td>2022-04-05</td>
-                                <td>2298</td>
-                            </tr>
-                            <tr>
-                                <td>공지</td>
-                                <td>[혜택안내] 동영상 리뷰 추가 혜택 오픈 안내 (2022.04.01~)</td>
-                                <td>2022-04-05</td>
-                                <td>2298</td>
-                            </tr>
-                            <tr>
-                                <td>공지</td>
-                                <td>[혜택안내] 동영상 리뷰 추가 혜택 오픈 안내 (2022.04.01~)</td>
-                                <td>2022-04-05</td>
-                                <td>2298</td>
-                            </tr>
-                            <tr>
-                                <td>공지</td>
-                                <td>[혜택안내] 동영상 리뷰 추가 혜택 오픈 안내 (2022.04.01~)</td>
-                                <td>2022-04-05</td>
-                                <td>2298</td>
-                            </tr>
-                            <tr>
-                                <td>공지</td>
-                                <td>[혜택안내] 동영상 리뷰 추가 혜택 오픈 안내 (2022.04.01~)</td>
-                                <td>2022-04-05</td>
-                                <td>2298</td>
-                            </tr>
+                            {
+                                state.notice.map((item,i)=>{
+                                    return(
+                                        <tr style={{"background-color":i<2?"#f7f7f7":"#fff"}}>
+                                            <td>{item.idx}</td>
+                                            <td style={{"font-weight":i<2?"500":"400"}}><Link to={`/noticeView?listNum=${item.no}`}>{item.subject}</Link></td>
+                                            <td style={{"color":i<2?"#1a1a1a":"#707070"}}>{item.date}</td>
+                                            <td style={{"color":i<2?"#1a1a1a":"#707070"}}>{item.view}</td>
+                                        </tr>
+                                    );
+                                })
+                            }
                         </table>
                     </div>
                 </div>

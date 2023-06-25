@@ -9,6 +9,7 @@ import DenimComponent from './sub/DenimComponent';
 import GoUpDownComponent from './GoUpDownComponent';
 import SignUpComponent from './SignUpComponent';
 import NoticeComponent from './NoticeComponent';
+import NoticeViewComponent from './NoticeViewComponent';
 
 export default function IntroComponent  ()  {
     return (
@@ -22,6 +23,7 @@ export default function IntroComponent  ()  {
                 <Route path='/denim' element={<DenimComponent/>} />
                 <Route path='/signup' element={<SignUpComponent/>} />
                 <Route path='/notice' element={<NoticeComponent/>} />
+                <Route path='/noticeView' element={<NoticeViewComponent/>} />
             </Routes>
             <FooterComponent/>
             <GoUpDownComponent/>

@@ -79,6 +79,9 @@
   width: 1050px;
   text-align: start;
 }
+#notice .container .gap .content table tr td:nth-child(2) a {
+  color: #1a1a1a;
+}
 #notice .container .gap .content table tr td:nth-child(3) {
   width: 150px;
   color: #707070;
