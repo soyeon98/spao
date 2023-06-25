@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function FooterComponent () {
     return (
@@ -49,7 +50,7 @@ export default function FooterComponent () {
                                     <li><a href="!#">윤리경영</a></li>
                                 </ul>
                                 <ul className="col col3">
-                                    <li><a href="!#">공지사항</a></li>
+                                    <li><Link to="/notice">공지사항</Link></li>
                                     <li><a href="!#">회원혜택</a></li>
                                     <li><a href="!#">채용정보 및 인사제도</a></li>
                                     <li><a href="!#">자주묻는질문 FAQ</a></li>

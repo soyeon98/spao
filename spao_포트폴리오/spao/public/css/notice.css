@@ -1,0 +1,89 @@
+#notice {
+  padding: 90px 0;
+}
+#notice::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #aaa;
+  z-index: 1;
+}
+#notice .container {
+  width: 100%;
+}
+#notice .container .gap {
+  width: 100%;
+}
+#notice .container .gap .link-box {
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto;
+}
+#notice .container .gap .link-box ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#notice .container .gap .link-box ul li {
+  padding: 0 0 0 12px;
+  margin: 0 0 0 8px;
+  font-size: 13px;
+  color: #909090;
+  line-height: 30px;
+}
+#notice .container .gap .link-box ul li a {
+  font-size: 13px;
+  color: #909090;
+}
+#notice .container .gap .link-box ul li:nth-child(2) {
+  background: url(../img/sale/ico_path.gif) no-repeat 0 50%;
+}
+#notice .container .gap .title {
+  width: 100%;
+  text-align: center;
+}
+#notice .container .gap .title h1 {
+  color: #1a1a1a;
+  font-size: 42px;
+  font-weight: 500;
+}
+#notice .container .gap .content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: transparent;
+}
+#notice .container .gap .content table {
+  width: 100%;
+  margin: 50px 0;
+  border-collapse: collapse;
+}
+#notice .container .gap .content table tr {
+  width: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  height: 75px;
+}
+#notice .container .gap .content table tr td {
+  font-size: 16px;
+  color: #1a1a1a;
+  text-align: center;
+}
+#notice .container .gap .content table tr td:nth-child(1) {
+  width: 100px;
+}
+#notice .container .gap .content table tr td:nth-child(2) {
+  width: 1050px;
+  text-align: start;
+}
+#notice .container .gap .content table tr td:nth-child(3) {
+  width: 150px;
+  color: #707070;
+}
+#notice .container .gap .content table tr td:nth-child(4) {
+  width: 100px;
+  color: #707070;
+}

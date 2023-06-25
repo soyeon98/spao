@@ -2,6 +2,7 @@ import React from 'react';
 import './scss/denim.scss';
 import axios from 'axios';
 import $ from 'jquery';
+import { Link } from 'react-router-dom';
 
 export default function DenimComponent() {
 
@@ -109,24 +110,24 @@ export default function DenimComponent() {
 
         //1. 메인슬라이드함수
         function mainSlide() {
-            $slideWrapD .stop().animate({ left: `${cnt_d * -100}%` }, 600, function () {
+            $slideWrapD.stop().animate({ left: `${cnt_d * -100}%` }, 600, function () {
                 if (cnt_d > 1) cnt_d = 0;
                 if (cnt_d < 0) cnt_d = 1;
-                $slideWrapD .stop().animate({ left: `${-100 * cnt_d}%` }, 0);
+                $slideWrapD.stop().animate({ left: `${-100 * cnt_d}%` }, 0);
                 
             });
             pageBtn_du();
         }
         //2-1. 다음 카운트 함수
         function nextCount() {
-            if (!$slideWrapD .is(':animated')) {
+            if (!$slideWrapD.is(':animated')) {
                 cnt_d++;
                 mainSlide();
             }
         }
         //2-2. 이전 카운트 함수
         function prevCount() {
-            if (!$slideWrapD .is(':animated')) {
+            if (!$slideWrapD.is(':animated')) {
                 cnt_d--;
                 mainSlide();
             }
@@ -187,7 +188,7 @@ export default function DenimComponent() {
                 <div className="gap">
                     <div className="link-box">
                         <ul>
-                            <li><a href="!#">HOME</a></li>
+                            <li><Link to="/main">HOME</Link></li>
                             <li>기획전</li>
                             <li>[기획전] 데님 제안서</li>
                         </ul>

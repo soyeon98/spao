@@ -7,6 +7,8 @@ import SaleProduct from './sub/SaleProduct';
 import SaleProductMen from './sub/SaleProductMen';
 import DenimComponent from './sub/DenimComponent';
 import GoUpDownComponent from './GoUpDownComponent';
+import SignUpComponent from './SignUpComponent';
+import NoticeComponent from './NoticeComponent';
 
 export default function IntroComponent  ()  {
     return (
@@ -18,6 +20,8 @@ export default function IntroComponent  ()  {
                 <Route path='/sale' element={<SaleProduct/>} />
                 <Route path='/saleMen' element={<SaleProductMen/>} />
                 <Route path='/denim' element={<DenimComponent/>} />
+                <Route path='/signup' element={<SignUpComponent/>} />
+                <Route path='/notice' element={<NoticeComponent/>} />
             </Routes>
             <FooterComponent/>
             <GoUpDownComponent/>

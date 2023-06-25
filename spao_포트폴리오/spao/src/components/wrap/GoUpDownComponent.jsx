@@ -3,13 +3,13 @@ import $, { easing } from 'jquery';
 
 export default function GoUpDownComponent(){
 
+    const [scrollTop,setScrollTop]=React.useState(0);
+
     React.useEffect(()=>{
      
         let gotopBtn = $('.gotop-btn');
         let goDownBtn = $('.godown-btn');
-        let footer = 0;
-       
-        footer = $('#footer').offset().top;
+        let footer = $('#footer').offset().top;
 
         gotopBtn.on({
             click(e){

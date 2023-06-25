@@ -1,0 +1,134 @@
+#signUp {
+  padding: 90px 0;
+}
+#signUp::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #aaa;
+  z-index: 1;
+}
+#signUp .container {
+  width: 100%;
+}
+#signUp .container .gap {
+  width: 100%;
+}
+#signUp .container .gap .link-box {
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto;
+}
+#signUp .container .gap .link-box ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#signUp .container .gap .link-box ul li {
+  padding: 0 0 0 12px;
+  margin: 0 0 0 8px;
+  font-size: 13px;
+  color: #909090;
+  line-height: 30px;
+}
+#signUp .container .gap .link-box ul li a {
+  font-size: 13px;
+  color: #909090;
+}
+#signUp .container .gap .link-box ul li:nth-child(2) {
+  background: url(../img/sale/ico_path.gif) no-repeat 0 50%;
+}
+#signUp .container .gap .title {
+  width: 100%;
+  text-align: center;
+}
+#signUp .container .gap .title h1 {
+  color: #1a1a1a;
+  font-size: 42px;
+  font-weight: 500;
+}
+#signUp .container .gap .eland {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#signUp .container .gap .eland img {
+  width: 110px;
+  margin: 20px 0 5px 0;
+}
+#signUp .container .gap .eland p {
+  color: rgb(102, 102, 102);
+  line-height: 18px;
+  letter-spacing: -0.6px;
+  font-size: 12px;
+}
+#signUp .container .gap form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+#signUp .container .gap form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+  outline: 0;
+}
+#signUp .container .gap form button {
+  width: 100%;
+  height: 52px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 50px 0 0 0;
+  border-radius: 25px;
+}
+#signUp .container .gap > a {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+#signUp .container .gap .gaib {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+#signUp .container .gap .gaib p {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+#signUp .container .gap .gaib button {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #E5132E;
+  height: 52px;
+  border-radius: 25px;
+}
+#signUp .container .gap .gaib button img {
+  width: 150px;
+}
+#signUp .container .gap .sns {
+  width: 100%;
+  padding: 30px 0;
+}
+#signUp .container .gap .sns ul {
+  display: flex;
+  justify-content: center;
+}
+#signUp .container .gap .sns ul li {
+  margin: 0 15px;
+}
+#signUp .container .gap .sns ul li a img {
+  width: 50px;
+}

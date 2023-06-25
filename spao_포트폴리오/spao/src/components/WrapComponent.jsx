@@ -5,7 +5,7 @@ import IntroComponent from './wrap/IntroComponent';
 export default function WrapComponent ()  {
     return (
         <div id='wrap'>
-
+            
             <HashRouter>
                 <Routes>
                     <Route path='/*'  element={<IntroComponent />} />
