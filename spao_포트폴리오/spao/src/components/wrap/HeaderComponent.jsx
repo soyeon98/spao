@@ -342,7 +342,7 @@ export default function HeaderComponent () {
                                 <a href="!#"  className='sub-up'><div className="img"></div></a>
                                 <div className="sub login-sub">
                                     <ul>
-                                        <li><Link to="/signup">LOGIN</Link></li>
+                                        <li><Link to="/signin">LOGIN</Link></li>
                                         <li><a href="!#">ORDER</a></li>
                                     </ul>
                                 </div>

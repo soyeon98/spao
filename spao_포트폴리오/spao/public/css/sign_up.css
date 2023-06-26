@@ -1,0 +1,199 @@
+#signUp {
+  width: 100%;
+}
+#signUp .container {
+  width: 100%;
+}
+#signUp .container .gap {
+  width: 100%;
+}
+#signUp .container .gap .up {
+  width: 100%;
+  height: 90px;
+  border-bottom: 2px solid #333;
+}
+#signUp .container .gap .up h2 {
+  width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-family: verdana;
+  font-size: 28px;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#signUp .container .gap .bottom {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+#signUp .container .gap .bottom .title {
+  width: 100%;
+}
+#signUp .container .gap .bottom .title h3 {
+  color: #333;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.6px;
+}
+#signUp .container .gap .bottom form {
+  width: 100%;
+}
+#signUp .container .gap .bottom form .sub-tit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding: 30px 0 5px 0;
+}
+#signUp .container .gap .bottom form .sub-tit h4 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 0 0 0 20px;
+  background: url(../img/main/ir_bl.gif) no-repeat 3% 55%;
+}
+#signUp .container .gap .bottom form .sub-tit p {
+  color: #666;
+  font-size: 14px;
+}
+#signUp .container .gap .bottom form .sub-tit p span {
+  color: #d63142;
+  font-size: 24px;
+  font-family: "gulim";
+}
+#signUp .container .gap .bottom form .info, #signUp .container .gap .bottom form .sns {
+  width: 100%;
+  background: #f0f0f0;
+  padding: 15px;
+  margin: 15px 0 0 0;
+}
+#signUp .container .gap .bottom form .info p, #signUp .container .gap .bottom form .sns p {
+  font-size: 14px;
+  color: #666;
+  line-height: 25px;
+  padding: 3px 0;
+}
+#signUp .container .gap .bottom form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#signUp .container .gap .bottom form table tbody {
+  width: 100%;
+}
+#signUp .container .gap .bottom form table tbody tr {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+#signUp .container .gap .bottom form table tbody tr th {
+  width: 200px;
+  padding: 10px 0 10px 20px;
+  text-align: start;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border-right: 1px solid #ddd;
+}
+#signUp .container .gap .bottom form table tbody tr th span {
+  color: #d63142;
+  font-size: 24px;
+  font-family: "gulim";
+  margin: 0 0 0 5px;
+}
+#signUp .container .gap .bottom form table tbody tr td {
+  width: 600px;
+  padding: 10px 0 10px 30px;
+}
+#signUp .container .gap .bottom form table tbody tr td input[type=text] {
+  width: 300px;
+  height: 35px;
+  padding: 0 15px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  outline: 0;
+}
+#signUp .container .gap .bottom form table tbody tr td input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 30px;
+}
+#signUp .container .gap .bottom form table tbody tr td input[type=radio] label {
+  display: block;
+}
+#signUp .container .gap .bottom form table tbody tr td select {
+  height: 30px;
+}
+#signUp .container .gap .bottom form table tbody tr td .warn {
+  color: #999;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 5px 0 0 0;
+}
+#signUp .container .gap .bottom form table tbody tr td button {
+  width: 130px;
+  margin: 0 0 0 15px;
+  height: 37px;
+  background: #333;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+}
+#signUp .container .gap .bottom form table tbody tr td.email input {
+  width: 150px;
+}
+#signUp .container .gap .bottom form table tbody tr td.email select {
+  width: 120px;
+  border: 1px solid #ddd;
+  height: 35px;
+  margin: 0 0 0 15px;
+}
+#signUp .container .gap .bottom form table tbody tr td.birth input {
+  width: 120px;
+}
+#signUp .container .gap .bottom form table tbody tr td.birth select {
+  width: 120px;
+  border: 1px solid #ddd;
+  height: 35px;
+  margin: 0 0 0 15px;
+}
+#signUp .container .gap .bottom form table tbody tr td.birth span {
+  margin: 0 10px;
+}
+#signUp .container .gap .bottom form table tbody tr td.hp input {
+  width: 120px;
+}
+#signUp .container .gap .bottom form table tbody tr td.hp select {
+  width: 120px;
+  border: 1px solid #ddd;
+  height: 35px;
+  margin: 0 0 0 15px;
+}
+#signUp .container .gap .bottom form table tbody tr td.hp span {
+  margin: 0 10px;
+}
+#signUp .container .gap .bottom form .btn-box {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+#signUp .container .gap .bottom form .btn-box button {
+  width: 200px;
+  height: 48px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #333;
+  margin: 0 10px;
+}
+#signUp .container .gap .bottom form .btn-box button:last-child {
+  background: #333;
+  color: #fff;
+}

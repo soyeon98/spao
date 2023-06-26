@@ -96,17 +96,16 @@
   font-size: 16px;
   font-weight: 400;
 }
-#section3 .container .gap .slide-container .slide-view .slide-wrap > li .info-box .color-box {
+#section3 .container .gap .slide-container .slide-view .slide-wrap > li .info-box .color {
   width: 100%;
-  margin: 0 5px 0 0;
 }
-#section3 .container .gap .slide-container .slide-view .slide-wrap > li .info-box .color-box .color {
+#section3 .container .gap .slide-container .slide-view .slide-wrap > li .info-box .color > span {
   display: inline-block;
+  margin: 0 3px 0 0;
   width: 14px;
   height: 14px;
   border: 1px solid #e6e5e5;
   background: transparent;
-  margin: 0 2px 0 0;
 }
 #section3 .container .gap .slide-container .slide-view .slide-wrap > li .info-box p {
   padding: 18px 0 10px 0;

@@ -119,10 +119,15 @@ export default function Section3Component() {
                                                 <div className="info-box">
                                                     <a href="!#"><h2>{item.상품명}</h2></a>
                                                     <h3>{Math.round(item.정가 * (1 - item.할인율)).toLocaleString('ko-KR')} <span className='price'>{item.할인율 === 0 ? '' : `${item.정가.toLocaleString('ko-KR')}`}</span> <span className='rate'>{item.할인율 === 0 ? '' : `${item.할인율 * 100}%`}</span></h3>
-                                                    <div className="color-box">
-                                                        <span className='color color1' style={{ "backgroundColor": `${item.색상1}` }}></span>
-                                                        <span className='color color2' style={{ "backgroundColor": `${item.색상2}` }}></span>
-                                                        <span className='color color3' style={{ "backgroundColor": `${item.색상3}` }}></span>
+                                                    <div className="color">
+                                                        <span style={{ "background-color": `${item.색상1}`, "border-color": `${item.색상1 === "" ? "transparent" : "#e6e5e5"}` }}></span>
+                                                        <span style={{ "background-color": `${item.색상2}`, "border-color": `${item.색상2 === "" ? "transparent" : "#e6e5e5"}` }}></span>
+                                                        <span style={{ "background-color": `${item.색상3}`, "border-color": `${item.색상3 === "" ? "transparent" : "#e6e5e5"}` }}></span>
+                                                        <span style={{ "background-color": `${item.색상4}`, "border-color": `${item.색상4 === "" ? "transparent" : "#e6e5e5"}` }}></span>
+                                                        <span style={{ "background-color": `${item.색상5}`, "border-color": `${item.색상5 === "" ? "transparent" : "#e6e5e5"}` }}></span>
+                                                        <span style={{ "background-color": `${item.색상6}`, "border-color": `${item.색상6 === "" ? "transparent" : "#e6e5e5"}` }}></span>
+                                                        <span style={{ "background-color": `${item.색상7}`, "border-color": `${item.색상7 === "" ? "transparent" : "#e6e5e5"}` }}></span>
+                                                        <span style={{ "background-color": `${item.색상8}`, "border-color": `${item.색상8 === "" ? "transparent" : "#e6e5e5"}` }}></span>
                                                     </div>
                                                     <p>리뷰 {item.리뷰수}건</p>
                                                     <div className="gender">

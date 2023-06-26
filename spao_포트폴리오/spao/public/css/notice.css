@@ -66,6 +66,7 @@
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   height: 75px;
+  align-items: center;
 }
 #notice .container .gap .content table tr td {
   font-size: 16px;

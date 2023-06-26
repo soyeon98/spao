@@ -1,7 +1,7 @@
-#signUp {
+#signIn {
   padding: 90px 0;
 }
-#signUp::after {
+#signIn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -11,67 +11,67 @@
   background: #aaa;
   z-index: 1;
 }
-#signUp .container {
+#signIn .container {
   width: 100%;
 }
-#signUp .container .gap {
+#signIn .container .gap {
   width: 100%;
 }
-#signUp .container .gap .link-box {
+#signIn .container .gap .link-box {
   width: 100%;
   max-width: 1440px;
   margin: 20px auto;
 }
-#signUp .container .gap .link-box ul {
+#signIn .container .gap .link-box ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-#signUp .container .gap .link-box ul li {
+#signIn .container .gap .link-box ul li {
   padding: 0 0 0 12px;
   margin: 0 0 0 8px;
   font-size: 13px;
   color: #909090;
   line-height: 30px;
 }
-#signUp .container .gap .link-box ul li a {
+#signIn .container .gap .link-box ul li a {
   font-size: 13px;
   color: #909090;
 }
-#signUp .container .gap .link-box ul li:nth-child(2) {
+#signIn .container .gap .link-box ul li:nth-child(2) {
   background: url(../img/sale/ico_path.gif) no-repeat 0 50%;
 }
-#signUp .container .gap .title {
+#signIn .container .gap .title {
   width: 100%;
   text-align: center;
 }
-#signUp .container .gap .title h1 {
+#signIn .container .gap .title h1 {
   color: #1a1a1a;
   font-size: 42px;
   font-weight: 500;
 }
-#signUp .container .gap .eland {
+#signIn .container .gap .eland {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
-#signUp .container .gap .eland img {
+#signIn .container .gap .eland img {
   width: 110px;
   margin: 20px 0 5px 0;
 }
-#signUp .container .gap .eland p {
+#signIn .container .gap .eland p {
   color: rgb(102, 102, 102);
   line-height: 18px;
   letter-spacing: -0.6px;
   font-size: 12px;
 }
-#signUp .container .gap form {
+#signIn .container .gap form {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   padding: 20px 0;
   margin: 0 auto;
 }
-#signUp .container .gap form input {
+#signIn .container .gap form input {
   width: 100%;
   height: 50px;
   padding: 0 15px;
@@ -81,7 +81,7 @@
   font-size: 16px;
   outline: 0;
 }
-#signUp .container .gap form button {
+#signIn .container .gap form button {
   width: 100%;
   height: 52px;
   background: #000;
@@ -91,44 +91,44 @@
   margin: 50px 0 0 0;
   border-radius: 25px;
 }
-#signUp .container .gap > a {
+#signIn .container .gap > a {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
 }
-#signUp .container .gap .gaib {
+#signIn .container .gap .gaib {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 50px 0 0 0;
 }
-#signUp .container .gap .gaib p {
+#signIn .container .gap .gaib p {
   text-align: center;
   padding: 0 0 20px 0;
 }
-#signUp .container .gap .gaib button {
+#signIn .container .gap .gaib button {
   width: 100%;
   background: #fff;
   border: 1px solid #E5132E;
   height: 52px;
   border-radius: 25px;
 }
-#signUp .container .gap .gaib button img {
+#signIn .container .gap .gaib button img {
   width: 150px;
 }
-#signUp .container .gap .sns {
+#signIn .container .gap .sns {
   width: 100%;
   padding: 30px 0;
 }
-#signUp .container .gap .sns ul {
+#signIn .container .gap .sns ul {
   display: flex;
   justify-content: center;
 }
-#signUp .container .gap .sns ul li {
+#signIn .container .gap .sns ul li {
   margin: 0 15px;
 }
-#signUp .container .gap .sns ul li a img {
+#signIn .container .gap .sns ul li a img {
   width: 50px;
 }

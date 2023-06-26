@@ -7,7 +7,7 @@ import SaleProduct from './sub/SaleProduct';
 import SaleProductMen from './sub/SaleProductMen';
 import DenimComponent from './sub/DenimComponent';
 import GoUpDownComponent from './GoUpDownComponent';
-import SignUpComponent from './SignUpComponent';
+import SignInComponent from './SignInComponent';
 import NoticeComponent from './NoticeComponent';
 import NoticeViewComponent from './NoticeViewComponent';
 
@@ -21,7 +21,7 @@ export default function IntroComponent  ()  {
                 <Route path='/sale' element={<SaleProduct/>} />
                 <Route path='/saleMen' element={<SaleProductMen/>} />
                 <Route path='/denim' element={<DenimComponent/>} />
-                <Route path='/signup' element={<SignUpComponent/>} />
+                <Route path='/signin' element={<SignInComponent/>} />
                 <Route path='/notice' element={<NoticeComponent/>} />
                 <Route path='/noticeView' element={<NoticeViewComponent/>} />
             </Routes>

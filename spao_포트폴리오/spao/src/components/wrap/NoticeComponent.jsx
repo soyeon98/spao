@@ -10,6 +10,14 @@ export default function NoticeComponent  ()  {
         notice: []
     });
 
+    function reset(){
+        window.scrollTo(0,0);
+    }
+
+    React.useEffect(()=>{
+        reset();
+    },[]);
+
 
     React.useEffect(() => {
         axios({
@@ -50,7 +58,7 @@ export default function NoticeComponent  ()  {
                             {
                                 state.notice.map((item,i)=>{
                                     return(
-                                        <tr style={{"background-color":i<2?"#f7f7f7":"#fff"}}>
+                                        <tr style={{"background-color":i<3?"#f7f7f7":"#fff","display":item.no===0||item.no===16?"none":"flex"}}>
                                             <td>{item.idx}</td>
                                             <td style={{"font-weight":i<2?"500":"400"}}><Link to={`/noticeView?listNum=${item.no}`}>{item.subject}</Link></td>
                                             <td style={{"color":i<2?"#1a1a1a":"#707070"}}>{item.date}</td>

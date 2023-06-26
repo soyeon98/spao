@@ -116,7 +116,7 @@ export default function Section2Component () {
                                                     </div>
                                                     <div className="info-box">
                                                         <a href="!#"><h2>{i.제품명}</h2></a>
-                                                        <h3>{i.판매가} <span className='price'>{i.할인율 === 0 ? '' : `${i.정가.toLocaleString('ko-KR')}`}</span> <span className='rate'>{i.할인율 === 0 ? '' : `${i.할인율 * 100}%`}</span></h3>
+                                                        <h3>{i.판매가.toLocaleString('ko-KR')} <span className='price'>{i.할인율 === 0 ? '' : `${i.정가.toLocaleString('ko-KR')}`}</span> <span className='rate'>{i.할인율 === 0 ? '' : `${i.할인율 * 100}%`}</span></h3>
                                                         <div className="color">
                                                             <span style={{ "background-color": `${i.색상1}`, "border-color": `${i.색상1 === "" ? "transparent" : "#e6e5e5"}` }}></span>
                                                             <span style={{ "background-color": `${i.색상2}`, "border-color": `${i.색상2 === "" ? "transparent" : "#e6e5e5"}` }}></span>

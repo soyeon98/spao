@@ -51,22 +51,22 @@ export default function NoticeViewComponent  ()  {
         window.location.href="/#/notice";
     }
 
-    const onClickPrev =(e)=>{
-        e.preventDefault();
-        window.location.href=`/!#/noticeView?ListNum=${Number(listNum)-1}`;
-        setState({
-            ...state,
-            notice:prev
-        })
-    }
-    const onClickNext =(e)=>{
-        e.preventDefault();
-        window.location.href=`/!#/noticeView?ListNum=${Number(listNum)+1}`;
-        setState({
-            ...state,
-            notice:next
-        })
-    }
+    // const onClickPrev =(e)=>{
+    //     e.preventDefault();
+    //     window.location.href=`/!#/noticeView?ListNum=${Number(listNum)-1}`;
+    //     setState({
+    //         ...state,
+    //         notice:prev
+    //     })
+    // }
+    // const onClickNext =(e)=>{
+    //     e.preventDefault();
+    //     window.location.href=`/!#/noticeView?ListNum=${Number(listNum)+1}`;
+    //     setState({
+    //         ...state,
+    //         notice:next
+    //     })
+    // }
 
     return(
         <div id='noticeView'>
@@ -100,15 +100,15 @@ export default function NoticeViewComponent  ()  {
                         </div>
                         <div className="list">
                             <ul>
-                                <li>
+                                <li style={{"display":`${notice.no===15?"none":"flex"}`}}>
                                     <span>이전글</span>
                                     <i>|</i>
-                                    <a href="!#" onClick={onClickPrev}>{prev.subject}</a>
+                                    <Link to={`/noticeView?listNum=${notice.no+1}`}>{prev.subject}</Link>
                                 </li>
-                                <li>
-                                    <span>이전글</span>
+                                <li style={{"display":notice.no===1?"none":"flex","border-top":notice.no===15?"1px solid #e5e5e5":"0"}}>
+                                    <span>다음글</span>
                                     <i>|</i>
-                                    <a href="!#" onClick={onClickNext}>{next.subject}</a>
+                                    <Link to={`/noticeView?listNum=${notice.no-1}`}>{next.subject}</Link>
                                 </li>
                             </ul>
                         </div>

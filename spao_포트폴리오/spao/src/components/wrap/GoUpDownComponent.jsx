@@ -1,13 +1,19 @@
 import React from 'react';
-import $, { easing } from 'jquery';
+import $ from 'jquery';
 
 export default function GoUpDownComponent(){
+
+    const [footerTop,setFooterTop] = React.useState(0);
 
     React.useEffect(()=>{
      
         let gotopBtn = $('.gotop-btn');
         let goDownBtn = $('.godown-btn');
-        let footer = $('#footer').offset().top;
+        let footer = 0;
+
+        footer= $('#footer').offset().top;
+
+        setFooterTop($('#footer').offset().top);
 
         gotopBtn.on({
             click(e){
@@ -19,12 +25,14 @@ export default function GoUpDownComponent(){
         goDownBtn.on({
             click(e){
                 e.preventDefault();
-                $('html,body').stop().animate({scrollTop:footer},300);
+                $('html,body').stop().animate({scrollTop:$('#footer').offset().top},300);
+                console.log(footer);
+                console.log($('#footer').offset().top);
               
             }
         })
 
-    },[]);
+    },[footerTop]);
 
     return(
         <div id='upDown'>

@@ -6,6 +6,14 @@ import {Link} from 'react-router-dom';
 
 export default function SaleProduct() {
 
+    function reset(){
+        window.scrollTo(0,0);
+    }
+
+    React.useEffect(()=>{
+        reset();
+    });
+
     const onClickNav=(e,value)=>{
         e.preventDefault();
         let ul1 = $('#saleProduct .row1').offset().top - 100;

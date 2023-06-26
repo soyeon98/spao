@@ -6,6 +6,14 @@ import SaleMenProductChildComponent from './SaleMenProductChildComponent';
 
 export default function SaleProductMen() {
 
+    function reset(){
+        window.scrollTo(0,0);
+    }
+
+    React.useEffect(()=>{
+        reset();
+    });
+
     const onClickNav=(e,value)=>{
         e.preventDefault();
         let ul1 = $('#saleProductMen .row1').offset().top - 100;

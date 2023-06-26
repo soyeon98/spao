@@ -56,11 +56,13 @@
                     width: 100%;
                     margin: 50px 0;
                     border-collapse: collapse;
+                   
                     tr{
                         width: 100%;
                         border-top:1px solid #eee;
                         border-bottom:1px solid #eee;
                         height: 75px;
+                        align-items: center;
                         td{
                             font-size: 16px;
                             color: #1a1a1a;

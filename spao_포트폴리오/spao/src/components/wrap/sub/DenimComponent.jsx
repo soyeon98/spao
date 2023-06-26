@@ -14,6 +14,14 @@ export default function DenimComponent() {
         cnt_2:0
     });
 
+    function reset(){
+        window.scrollTo(0,0);
+    }
+
+    React.useEffect(()=>{
+        reset();
+    });
+
 
     React.useEffect(() => {
         axios({
