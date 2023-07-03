@@ -166,7 +166,7 @@ export default function SignUpComponent() {
                                             </tr>
                                             <tr>
                                                 <th scope='row'>이메일 수신</th>
-                                                <td><label htmlFor=""><input type="radio" name='email' />수신</label><label htmlFor=""><input type="radio" name='email'/>수신안함</label></td>
+                                                <td><label htmlFor="emailOk"><input type="radio" name='email' id="emailOk"/>수신</label><label htmlFor="emailNo"><input type="radio" name='email' id='emailNo'/>수신안함</label></td>
                                             </tr>
                                             <tr>
                                                 <th scope='row'>문자수신(LMS, SMS 등)</th>

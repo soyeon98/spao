@@ -1,0 +1,78 @@
+#productDetail {
+  width: 100%;
+  padding: 90px 0 100px 0;
+}
+#productDetail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #aaa;
+  z-index: 1;
+}
+#productDetail .container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#productDetail .container .gap {
+  width: 100%;
+  padding: 70px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+#productDetail .container .gap .left img {
+  width: 500px;
+}
+#productDetail .container .gap .right .product-info {
+  width: 100%;
+}
+#productDetail .container .gap .right .product-info h2 {
+  font-size: 22px;
+  color: #1a1a1a;
+  line-height: 30px;
+  font-weight: 500;
+  padding: 10px 0 5px 0;
+}
+#productDetail .container .gap .right .product-info .gender {
+  padding: 0 0 20px 0;
+}
+#productDetail .container .gap .right .product-info .gender > span {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-size: 11px;
+  width: 39px;
+  height: 16px;
+  padding: 3px;
+}
+#productDetail .container .gap .right .product-info .price {
+  display: flex;
+  justify-content: space-between;
+}
+#productDetail .container .gap .right .product-info .price h3 {
+  font-size: 23px;
+  color: #1a1a1a;
+  line-height: 30px;
+  font-weight: 500;
+}
+#productDetail .container .gap .right .product-info > a {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 20px;
+  padding: 15px 0;
+  font-size: 13px;
+  color: #221f1f;
+}
+#productDetail .container .gap .right .gaib {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+}
+#productDetail .container .gap .right .review a img {
+  width: 370px;
+}

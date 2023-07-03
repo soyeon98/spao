@@ -10,6 +10,7 @@ import GoUpDownComponent from './GoUpDownComponent';
 import SignInComponent from './SignInComponent';
 import NoticeComponent from './NoticeComponent';
 import NoticeViewComponent from './NoticeViewComponent';
+import ProductDetailComponent from './ProductDetailComponent';
 
 export default function IntroComponent  ()  {
     return (
@@ -21,6 +22,7 @@ export default function IntroComponent  ()  {
                 <Route path='/sale' element={<SaleProduct/>} />
                 <Route path='/saleMen' element={<SaleProductMen/>} />
                 <Route path='/denim' element={<DenimComponent/>} />
+                <Route path='/detail' element={<ProductDetailComponent/>} />
                 <Route path='/signin' element={<SignInComponent/>} />
                 <Route path='/notice' element={<NoticeComponent/>} />
                 <Route path='/noticeView' element={<NoticeViewComponent/>} />

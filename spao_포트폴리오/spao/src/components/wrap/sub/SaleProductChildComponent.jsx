@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 
 export default function SaleProductChildComponent() {
 
@@ -58,11 +59,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to="/detail">
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
