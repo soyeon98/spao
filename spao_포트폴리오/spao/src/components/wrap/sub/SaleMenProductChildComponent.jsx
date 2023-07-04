@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function SaleMenProductChildComponent() {
 
@@ -14,10 +15,11 @@ export default function SaleMenProductChildComponent() {
         knit: [],
         skirt: [],
         outer: [],
-        푸퍼: []
+        푸퍼: [],
+        sale_men:[]
     });
 
-    React.useEffect(() => {
+    const getProduct=()=> {
         axios({
             url: './data/sub/sale_men.json',
             method: 'get'
@@ -36,6 +38,7 @@ export default function SaleMenProductChildComponent() {
                         skirt: res.data.skirt,
                         outer: res.data.outer,
                         푸퍼: res.data.푸퍼,
+                        sale_men:res.data
                     })
                 }
             })
@@ -43,7 +46,12 @@ export default function SaleMenProductChildComponent() {
                 console.log(`AXIOS 실패 ${err}`);
             })
 
-    }, []);
+        }
+
+        React.useEffect(()=>{
+            getProduct();
+            localStorage.setItem('sale_men', JSON.stringify(state.sale_men));
+          },[state]);
 
     return (
         <div className="product-box">
@@ -56,13 +64,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.setSale.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -100,13 +108,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.summer.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -144,13 +152,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.coolJean.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -188,13 +196,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.pazama.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -232,13 +240,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.shirt.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -276,13 +284,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.pants.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -320,13 +328,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.setUp.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -364,13 +372,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.knit.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -408,13 +416,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.skirt.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -452,13 +460,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.outer.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -496,13 +504,13 @@ export default function SaleMenProductChildComponent() {
                         {
                             state.푸퍼.map((i, idx) => {
                                 return (
-                                    <li>
+                                    <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detailM/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>

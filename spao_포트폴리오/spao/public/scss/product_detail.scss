@@ -1,4 +1,4 @@
-#productDetail{
+.productDetail{
     position: relative;
     width: 100%;
     padding: 90px 0 100px 0;
@@ -69,6 +69,18 @@
                         color: #1a1a1a;
                         line-height: 30px;
                         font-weight: 500;
+                        .origin{
+                            text-decoration: line-through;
+                            padding: 0 10px;
+                            font-size: 18px;
+                            color: #909090;
+                            font-weight: 400;
+                        }
+                        .sale{
+                            font-size: 18px;
+                            color: #c41e20;
+                            font-weight: 400;
+                        }
                     }
                 }
                 >a{
@@ -115,10 +127,12 @@
                         width: 100%;
                         padding: 10px 30px 0 0;
                         button{
+                            background: transparent;
+                            display: inline-flex;
+                            border: 1px solid #e6e5e5;
                             width: 20%;
                             margin: 0 5px 5px 0;
                             height: 30px;
-                            border: 0;
                         }
 
                     }

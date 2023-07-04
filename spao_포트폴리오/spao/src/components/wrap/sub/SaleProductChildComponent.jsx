@@ -15,10 +15,12 @@ export default function SaleProductChildComponent() {
         knit: [],
         skirt: [],
         outer: [],
-        푸퍼: []
+        푸퍼: [],
+        sale_women:[]
     });
+    
 
-    React.useEffect(() => {
+    const getProduct=()=> {
         axios({
             url: './data/sub/sale_women.json',
             method: 'get'
@@ -37,14 +39,19 @@ export default function SaleProductChildComponent() {
                         skirt: res.data.skirt,
                         outer: res.data.outer,
                         푸퍼: res.data.푸퍼,
+                        sale_women:res.data
                     })
                 }
             })
             .catch((err) => {
                 console.log(`AXIOS 실패 ${err}`);
             })
+    }
 
-    }, []);
+    React.useEffect(()=>{
+        getProduct();
+        localStorage.setItem('sale_women', JSON.stringify(state.sale_women));
+      },[state]);
 
     return (
         <div className="product-box">
@@ -59,7 +66,7 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <Link to="/detail">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
@@ -103,11 +110,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -147,11 +154,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -191,11 +198,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -235,11 +242,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -279,11 +286,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -323,11 +330,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -367,11 +374,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -411,11 +418,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -455,11 +462,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
@@ -499,11 +506,11 @@ export default function SaleProductChildComponent() {
                                 return (
                                     <li key={i.제품코드}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <Link to={`/detail/${i.제품코드}`}>
                                                 <div className="img">
                                                     <img src={`./img/sale/${i.이미지}`} alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="info-box">
                                             <a href="!#"><h2>{i.제품명}</h2></a>
