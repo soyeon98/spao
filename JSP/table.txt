@@ -1,0 +1,15 @@
+
+// 회원정보 테이블
+create table spao_member(
+    idx	 int	 auto_increment,
+    user_name    varchar(30)  not  null,
+	user_id	 varchar(16)  not  null,
+	user_pw 	varchar(16)  not  null,
+	user_birth     varchar(10)   null,
+    user_hp    varchar(11)  not  null,
+    user_addr   varchar(250)   null,
+	user_email    varchar(50)  not  null,
+	user_receive	 varchar(150)   not null,
+   	create_date  timestamp  DEFAULT  CURRENT_TIMESTAMP,
+   	PRIMARY KEY ( idx,user_id)
+);
