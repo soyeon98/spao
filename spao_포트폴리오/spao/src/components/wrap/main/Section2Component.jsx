@@ -3,7 +3,7 @@ import $ from 'jquery'
 import './scss/section2.scss';
 import axios from 'axios';
 
-export default function Section2Component () {
+export default function Section2Component ({setViewProduct}) {
 
     const [state, setState] = React.useState({
         우먼: [],
@@ -83,6 +83,31 @@ export default function Section2Component () {
         }
     }
 
+    const onClickProductList = (e, item) => {
+        e.preventDefault();
+        let obj = {
+            제품코드: item.제품코드,
+            이미지: `./img/main/${item.이미지}`,
+            제품명: item.제품명,
+            성별: item.성별,
+            판매가: item.판매가,
+            할인율: (item.할인율)*100,
+            정가: item.정가,
+            색상1: item.색상1,
+            색상2: item.색상2,
+            색상3: item.색상3,
+            색상4: item.색상4,
+            색상5: item.색상5,
+            색상6: item.색상6,
+            색상7: item.색상7,
+            색상8: item.색상8
+        }
+        console.log(obj);
+        setViewProduct(obj);
+        // 상세페이지 이동
+        window.location.href = '#/detail';
+    }
+
 
     return (
         <section id="section2">
@@ -108,7 +133,7 @@ export default function Section2Component () {
                                             return (
                                                 <li className='slide'>
                                                     <div className="img-box">
-                                                        <a href="!#">
+                                                        <a href="!#" onClick={(e)=>onClickProductList(e,i)}>
                                                             <div className="img">
                                                                 <img src={`./img/main/${i.이미지}`} alt="" /><div className="num" style={{ "background-color": `${idx > 3 ? "#b5b5b5" : "#e86434"}` }}>{idx + 1}</div>
                                                             </div>
@@ -143,7 +168,7 @@ export default function Section2Component () {
                                             return (
                                                 <li>
                                                     <div className="img-box">
-                                                        <a href="!#">
+                                                        <a href="!#" onClick={(e)=>onClickProductList(e,i)}>
                                                             <div className="img">
                                                                 <img src={`./img/main/${i.이미지}`} alt="" /><div className="num" style={{ "background-color": `${idx > 3 ? "#b5b5b5" : "#e86434"}` }}>{idx + 1}</div>
                                                             </div>
@@ -178,7 +203,7 @@ export default function Section2Component () {
                                             return (
                                                 <li>
                                                     <div className="img-box">
-                                                        <a href="!#">
+                                                        <a href="!#" onClick={(e)=>onClickProductList(e,i)}>
                                                             <div className="img">
                                                                 <img src={`./img/main/${i.이미지}`} alt="" /><div className="num" style={{ "background-color": `${idx > 3 ? "#b5b5b5" : "#e86434"}` }}>{idx + 1}</div>
                                                             </div>
@@ -213,7 +238,7 @@ export default function Section2Component () {
                                             return (
                                                 <li>
                                                     <div className="img-box">
-                                                        <a href="!#">
+                                                        <a href="!#" onClick={(e)=>onClickProductList(e,i)}>
                                                             <div className="img">
                                                                 <img src={`./img/main/${i.이미지}`} alt="" /><div className="num" style={{ "background-color": `${idx > 3 ? "#b5b5b5" : "#e86434"}` }}>{idx + 1}</div>
                                                             </div>

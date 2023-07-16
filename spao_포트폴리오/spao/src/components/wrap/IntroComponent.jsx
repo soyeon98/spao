@@ -11,20 +11,18 @@ import SignInComponent from './SignInComponent';
 import NoticeComponent from './NoticeComponent';
 import NoticeViewComponent from './NoticeViewComponent';
 import ProductDetailComponent from './ProductDetailComponent';
-import ProductDetailMenComponent from './ProductDetailMenComponent';
 
-export default function IntroComponent  ()  {
+export default function IntroComponent  ({setViewProduct})  {
     return (
         <>
             <HeaderComponent/>
             <Routes>
-                <Route index element={<MainComponent />} />
-                <Route path='/main' element={<MainComponent/>} />
-                <Route path='/sale' element={<SaleProduct/>} />
-                <Route path='/saleMen' element={<SaleProductMen/>} />
-                <Route path='/denim' element={<DenimComponent/>} />
-                <Route path='/detail/:id' element={<ProductDetailComponent/>} />
-                <Route path='/detailM/:id' element={<ProductDetailMenComponent/>} />
+                <Route index element={<MainComponent setViewProduct={setViewProduct} />} />
+                <Route path='/main' element={<MainComponent setViewProduct={setViewProduct}/>} />
+                <Route path='/sale' element={<SaleProduct setViewProduct={setViewProduct}/>} />
+                <Route path='/saleMen' element={<SaleProductMen setViewProduct={setViewProduct}/>} />
+                <Route path='/denim' element={<DenimComponent setViewProduct={setViewProduct}/>} />
+                <Route path='/detail' element={<ProductDetailComponent setViewProduct={setViewProduct}/>} />
                 <Route path='/signin' element={<SignInComponent/>} />
                 <Route path='/notice' element={<NoticeComponent/>} />
                 <Route path='/noticeView' element={<NoticeViewComponent/>} />

@@ -4,7 +4,7 @@ import axios from 'axios';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
-export default function DenimComponent() {
+export default function DenimComponent({setViewProduct}) {
 
     const [state, setState] = React.useState({
         men: [],
@@ -189,6 +189,31 @@ export default function DenimComponent() {
         }
     }
 
+    const onClickProductList = (e, item) => {
+        e.preventDefault();
+        let obj = {
+            제품코드: item.제품코드,
+            이미지: `./img/denim/${item.이미지}`,
+            제품명: item.제품명,
+            성별: item.성별,
+            판매가: item.판매가,
+            할인율: item.할인율,
+            정가: item.정가,
+            색상1: item.색상1,
+            색상2: item.색상2,
+            색상3: item.색상3,
+            색상4: item.색상4,
+            색상5: item.색상5,
+            색상6: item.색상6,
+            색상7: item.색상7,
+            색상8: item.색상8
+        }
+        console.log(obj);
+        setViewProduct(obj);
+        // 상세페이지 이동
+        window.location.href = '#/detail';
+    }
+
 
     return (
         <div id='denim'>
@@ -295,7 +320,7 @@ export default function DenimComponent() {
                                 return (
                                     <li key={idx}>
                                         <div className="img-box">
-                                            <a href="!#">
+                                            <a href="!#" onClick={(e)=>onClickProductList(e,i)}>
                                                 <div className="img">
                                                     <img src={`./img/denim/${i.이미지}`} alt="" />
                                                 </div>

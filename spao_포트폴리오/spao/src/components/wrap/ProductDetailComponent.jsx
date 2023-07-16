@@ -1,45 +1,91 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
-export default function ProductDetailComponent (){
+export default function ProductDetailComponent ({setViewProduct}){
 
-    function reset(){
-        window.scrollTo(0,0);
-    }
 
-    const {id} = useParams();
+
+    // const {id} = useParams();
 
     const [state,setState]=React.useState({
-        product:[]
+        product:{},
+        cnt:1
     });
     const {product} =state;
 
-    React.useState(()=>{
-
-        reset();
-        const data = JSON.parse(localStorage.getItem('sale_women'));
+    React.useEffect(()=>{
         
-        for(let i=0; i<Object.keys(data).length; i++){
+        window.scrollTo(0,0);
+      
+        if(localStorage.getItem('SY_VIEW_PRODUCT')!==null){
+            let result =JSON.parse(localStorage.getItem('SY_VIEW_PRODUCT'));
+            setState({
+                ...state,
+                product:result[0]
 
-            for(let j=0; j<data[Object.keys(data)[i]].length; j++){
-            
-                if(data[Object.keys(data)[i]][j].제품코드 === id){
-                    setState({
-                        ...state,
-                        product : data[Object.keys(data)[i]][j]
-                    })
-                }
-            }
-       
+            })
         }
-      },[]);
+       
+    },[])
+
+    const onChangeNum =(e)=>{
+        let cnt = e.target.value;
+        setState({
+            ...state,
+            cnt:cnt
+        })
+    }
+
+    const onClickPlus = ()=>{
+        let cnt=state.cnt;
+        cnt++;
+        setState({
+            ...state,
+            cnt:cnt
+        })
+    }
+    const onClickMinus = ()=>{
+        let cnt=state.cnt;
+        if(cnt===1){
+            cnt=1;
+        }
+        else{
+            cnt--;
+        }
+        
+        setState({
+            ...state,
+            cnt:cnt
+        })
+    }
+
+
+    // React.useState(()=>{
+
+    //     reset();
+    //     const data = JSON.parse(localStorage.getItem('sale_women'));
+        
+    //     for(let i=0; i<Object.keys(data).length; i++){
+
+    //         for(let j=0; j<data[Object.keys(data)[i]].length; j++){
+            
+    //             if(data[Object.keys(data)[i]][j].제품코드 === id){
+    //                 setState({
+    //                     ...state,
+    //                     product : data[Object.keys(data)[i]][j]
+    //                 })
+    //             }
+    //         }
+       
+    //     }
+    //   },[]);
 
     return (
         <div id='productDetailWomen' className='productDetail'>
             <div className="container">
                 <div className="gap">
                     <div className="left">
-                        <img src={`./img/sale/${product.이미지}`} alt="" />
+                        <img src={product.이미지} alt="" />
                     </div>
                     <div className="right">
                         <div className="product-info">
@@ -89,9 +135,9 @@ export default function ProductDetailComponent (){
                                 </div>
                                 <div className="col2">
                                     <div className="count">
-                                        <div className="minus">-</div>
-                                        <input type="text" />
-                                        <div className="plus">+</div>
+                                        <button className="minus" onClick={onClickMinus}>-</button>
+                                        <input type="text" onChange={onChangeNum} value={state.cnt}/>
+                                        <button className="plus" onClick={onClickPlus}>+</button>
                                     </div>
                                 </div>
                                 <div className="col3">

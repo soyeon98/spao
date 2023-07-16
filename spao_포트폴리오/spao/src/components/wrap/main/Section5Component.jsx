@@ -3,7 +3,7 @@ import axios from 'axios';
 import $ from 'jquery';
 import './scss/section5.scss';
 
-export default function Section5Component() {
+export default function Section5Component({setViewProduct}) {
 
     const [state, setState] = React.useState({
         stylePick: [],
@@ -30,6 +30,32 @@ export default function Section5Component() {
             })
 
     }, []);
+
+    const onClickProductList = (e, item) => {
+        e.preventDefault();
+        let obj = {
+            제품코드: item.제품코드,
+            이미지: `./img/main/${item.이미지}`,
+            제품명: item.상품명,
+            성별: item.성별,
+            판매가: Math.round(item.정가 * (1 - item.할인율)),
+            할인율: (item.할인율)*100,
+            정가: item.정가,
+            색상1: item.색상1,
+            색상2: item.색상2,
+            색상3: item.색상3,
+            색상4: item.색상4,
+            색상5: item.색상5,
+            색상6: item.색상6,
+            색상7: item.색상7,
+            색상8: item.색상8
+        }
+        console.log(obj);
+        setViewProduct(obj);
+        // 상세페이지 이동
+        window.location.href = '#/detail';
+    }
+
 
 
     React.useEffect(() => {
@@ -125,7 +151,7 @@ export default function Section5Component() {
                                         return (
                                             <li className='slide' key={idx}>
                                                 <div className="img-box">
-                                                    <a href="!#"><img src={`./img/main/${i.이미지}`} alt="" /></a>
+                                                    <a href="!#" onClick={(e)=>onClickProductList(e,i)}><img src={`./img/main/${i.이미지}`} alt="" /></a>
                                                 </div>
                                                 <div className="info-box">
                                                     <a href="!#"><h2>{i.제품명}</h2></a>

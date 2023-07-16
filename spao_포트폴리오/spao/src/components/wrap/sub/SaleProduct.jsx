@@ -4,7 +4,7 @@ import './scss/sale.scss';
 import SaleProductChildComponent from './SaleProductChildComponent';
 import {Link} from 'react-router-dom';
 
-export default function SaleProduct() {
+export default function SaleProduct({setViewProduct}) {
 
     function reset(){
         window.scrollTo(0,0);
@@ -61,6 +61,8 @@ export default function SaleProduct() {
             $('html,body').stop().animate({scrollTop:ul11},300);
         }
     }
+
+
    
     return (
         <div id='saleProduct' className='sale-product'>
@@ -95,7 +97,7 @@ export default function SaleProduct() {
                             <li><a href="!#" onClick={(e)=>onClickNav(e,11)}>푸퍼 </a></li>
                         </ul>
                     </div>
-                    <SaleProductChildComponent/>
+                    <SaleProductChildComponent setViewProduct={setViewProduct}/>
                 </div>
             </div>
 

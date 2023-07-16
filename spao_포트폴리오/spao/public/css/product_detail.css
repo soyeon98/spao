@@ -60,7 +60,6 @@
   background: #000;
   color: #fff;
   font-size: 11px;
-  width: 39px;
   height: 16px;
   padding: 3px;
 }
@@ -197,11 +196,13 @@
   align-items: center;
   justify-content: center;
 }
-.productDetail .container .gap .right .buy .col2 .count div {
+.productDetail .container .gap .right .buy .col2 .count button {
   width: 26px;
   text-align: center;
   font-size: 16px;
   color: #000;
+  border: 0;
+  background: transparent;
 }
 .productDetail .container .gap .right .buy .col2 .count input {
   width: 35px;

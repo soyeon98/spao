@@ -8,14 +8,14 @@ import Section6Component from './main/Section6Component';
 import Section7Component from './main/Section7Component';
 import Section8Component from './main/Section8Component';
 
-export default function MainComponent () {
+export default function MainComponent ({setViewProduct}) {
     return (
         <main id='main'>
           <Section1Component/>
-          <Section2Component/>
-          <Section3Component/>
+          <Section2Component setViewProduct={setViewProduct}/>
+          <Section3Component setViewProduct={setViewProduct}/>
           <Section4Component/>
-          <Section5Component/>
+          <Section5Component setViewProduct={setViewProduct}/>
           <Section6Component/>
           <Section7Component/>
           <Section8Component/>
