@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 
 export default function SignUpComponent() {
 
@@ -16,11 +17,10 @@ export default function SignUpComponent() {
         user_addr1:'',
         user_addr2:'',
         user_email:'',
-        user_domain:'',
-        user_receive1:'수신',
-        user_receive2:'수신',
-        user_receive3:'수신',
-        user_receive4:'수신'
+        user_receive1:'이메일수신',
+        user_receive2:'문자수신',
+        user_receive3:'DM수신',
+        user_receive4:'모바일수신'
     });
     const onClickMain =(e)=>{
         e.preventDefault();
@@ -117,7 +117,50 @@ export default function SignUpComponent() {
             user_receive1:e.target.value
         })
     }
+    const onChangeReceive2 = (e) =>{
+        setState({
+            ...state,
+            user_receive2:e.target.value
+        })
+    }
+    const onChangeReceive3 = (e) =>{
+        setState({
+            ...state,
+            user_receive3:e.target.value
+        })
+    }
+    const onChangeReceive4 = (e) =>{
+        setState({
+            ...state,
+            user_receive4:e.target.value
+        })
+    }
 
+    const onSubmitSignUp = (e)=>{
+        e.preventDefault();
+        const formData = {
+            "user_name":state.user_name,
+            "user_id":state.user_id,
+            "user_pw":state.user_pw,
+            "user_birth":state.user_birth_year+"-"+state.user_birth_month+"-"+state.user_birth_date,
+            "user_addr":state.user_addr1+state.user_addr2,
+            "user_email":state.user_email+"@"+state.user_domain,
+            "user_receive":state.user_receive1+","+state.user_receive2+","+state.user_receive3+","+state.user_receive4,
+        }
+        console.log(formData);
+        $.ajax({
+            url: 'http://localhost:8080/JSP/spao/signup_action.jsp',
+            type: 'POST',
+            data: formData,
+            success(res) {
+                console.log('AJAX 성공!');
+                console.log(res);
+            },
+            error(err) {
+                console.log('AJAX 실패!' + err);
+            }
+        })
+    }
     
 
 
@@ -133,7 +176,7 @@ export default function SignUpComponent() {
                             <h3>E POINT 회원가입</h3>
                         </div>
                         <div className="content">
-                            <form action="">
+                            <form action="" method='post' name='sign_up' onSubmit={onSubmitSignUp}>
                                 <div className="sub-tit">
                                     <h4>기본정보</h4>
                                     <p>(<span>*</span>)표시는 필수입력항목입니다.</p>
@@ -295,9 +338,9 @@ export default function SignUpComponent() {
                                                     <option value="019">019</option>
                                                 </select>
                                                 <span>-</span>
-                                                <input type="text" name="user_hp2" onChange={onChangeHp2} value={state.user_hp2}/>
+                                                <input type="text" name="user_hp2" onChange={onChangeHp2} value={state.user_hp2} maxLength={4}/>
                                                 <span>-</span>
-                                                <input type="text" name="user_hp3" onChange={onChangeHp3} value={state.user_hp3}/>
+                                                <input type="text" name="user_hp3" onChange={onChangeHp3} value={state.user_hp3} maxLength={4}/>
                                             </td>
                                         </tr>
                                         <tr>
@@ -344,24 +387,45 @@ export default function SignUpComponent() {
                                                 <th scope='row'>이메일 수신</th>
                                                 <td>
                                                     <label htmlFor="emailOk">
-                                                        <input type="radio" name='user_receive1' id="emailOk" checked value='수신' onChange={onChangeReceive1}/>수신
+                                                        <input type="radio" name='user_receive1' id="emailOk" value={'이메일수신'} onChange={onChangeReceive1} checked={state.user_receive1.includes('이메일수신')}/>수신
                                                     </label>
                                                     <label htmlFor="emailNo">
-                                                        <input type="radio" name='user_receive1' id='emailNo' value='수신안함' onChange={onChangeReceive1}/>수신안함
+                                                        <input type="radio" name='user_receive1' id='emailNo' value={'수신안함'} onChange={onChangeReceive1} checked={state.user_receive1.includes('수신안함')}/>수신안함
                                                     </label>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th scope='row'>문자수신(LMS, SMS 등)</th>
-                                                <td><label htmlFor=""><input type="radio"  name='user_receive2' checked value={'수신'}/>수신</label><label htmlFor=""><input type="radio"  name='user_receive2' value={'수신안함'}/>수신안함</label></td>
+                                                <td>
+                                                    <label htmlFor="smsOk">
+                                                        <input type="radio"  name='user_receive2' id='smsOk'   value={'문자수신'}  onChange={onChangeReceive2} checked={state.user_receive2.includes('문자수신')}/>수신
+                                                    </label>
+                                                    <label htmlFor="smsNo">
+                                                        <input type="radio"  name='user_receive2' id='smsNo'  value={'수신안함'}  onChange={onChangeReceive2} checked={state.user_receive2.includes('수신안함')}/>수신안함
+                                                    </label>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th scope='row'>DM 수신</th>
-                                                <td><label htmlFor=""><input type="radio"  name='user_receive3' checked value={'수신'}/>수신</label><label htmlFor=""><input type="radio"  name='user_receive3' value={'수신안함'}/>수신안함</label></td>
+                                                <td>
+                                                    <label htmlFor="dmOk">
+                                                        <input type="radio"  name='user_receive3' id='dmOk'  value={'DM수신'}  onChange={onChangeReceive3} checked={state.user_receive3.includes('DM수신')}/>수신
+                                                    </label>
+                                                    <label htmlFor="dmNo">
+                                                        <input type="radio"  name='user_receive3' id='dmNo' value={'수신안함'}  onChange={onChangeReceive3} checked={state.user_receive3.includes('수신안함')}/>수신안함
+                                                    </label>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th scope='row'>모바일 쿠폰북 수신</th>
-                                                <td><label htmlFor=""><input type="radio"  name='user_receive4' checked value={'수신'}/>수신</label><label htmlFor=""><input type="radio"  name='user_receive4' value={'수신안함'}/>수신안함</label></td>
+                                                <td>
+                                                    <label htmlFor="mobileOk">
+                                                        <input type="radio"  name='user_receive4' id='mobileOk' value={'모바일수신'}  onChange={onChangeReceive4} checked={state.user_receive4.includes('모바일수신')}/>수신
+                                                    </label>
+                                                    <label htmlFor="mobileNo">
+                                                        <input type="radio"  name='user_receive4'id='mobileNo' value={'수신안함'}  onChange={onChangeReceive4} checked={state.user_receive4.includes('수신안함')}/>수신안함
+                                                    </label>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
