@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom';
 
 export default function HeaderComponent () {
 
+    const [isLogin, setIsLogin] = React.useState(false);
+
     React.useEffect(()=>{
 
         let scrollTop = $(window).scrollTop();  
@@ -38,6 +40,27 @@ export default function HeaderComponent () {
       
         });
     });
+
+    React.useEffect(()=>{
+       
+        let isLogin = false;
+
+        if(sessionStorage.getItem('user_id') !==null){
+            isLogin =true;
+        }
+        else {
+            isLogin =false;
+        }
+        setIsLogin(isLogin);
+
+    },[isLogin])
+
+    const onClickLogout=(e)=>{
+        e.preventDefault();
+        sessionStorage.removeItem('user_id');
+        setIsLogin(false);
+        window.location.href="/";
+    }
     
     return (
         <header id='header'>
@@ -342,7 +365,17 @@ export default function HeaderComponent () {
                                 <a href="!#"  className='sub-up'><div className="img"></div></a>
                                 <div className="sub login-sub">
                                     <ul>
-                                        <li><Link to="/signin">LOGIN</Link></li>
+                                        {
+                                            
+                                            !isLogin&&(
+                                                <li><Link to="/signin">LOGIN</Link></li>
+                                            )
+                                        }
+                                        {
+                                            isLogin&&(
+                                                <li><Link to="/signin" onClick={onClickLogout}>LOGOUT</Link></li>
+                                            )
+                                        }
                                         <li><a href="!#">ORDER</a></li>
                                     </ul>
                                 </div>

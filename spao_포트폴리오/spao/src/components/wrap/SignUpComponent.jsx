@@ -143,6 +143,7 @@ export default function SignUpComponent() {
             "user_id":state.user_id,
             "user_pw":state.user_pw,
             "user_birth":state.user_birth_year+"-"+state.user_birth_month+"-"+state.user_birth_date,
+            "user_hp":state.user_hp1+state.user_hp2+state.user_hp3,
             "user_addr":state.user_addr1+state.user_addr2,
             "user_email":state.user_email+"@"+state.user_domain,
             "user_receive":state.user_receive1+","+state.user_receive2+","+state.user_receive3+","+state.user_receive4,
@@ -158,6 +159,30 @@ export default function SignUpComponent() {
             },
             error(err) {
                 console.log('AJAX 실패!' + err);
+            }
+        })
+    }
+    const onClickIdSearch=(e)=>{
+        e.preventDefault();
+        const formData={
+            "user_id":state.user_id
+        }
+        $.ajax({
+            url: 'http://localhost:8080/JSP/spao/idsearch_action.jsp',
+            type: 'POST',
+            data: formData,
+            dataType:'json',
+            success(res){
+                console.log(res.result);
+                if(res.result==='-1'){
+                    alert('중복된 아이디입니다.\n다른 아이디를 사용해주세요');
+                }
+                else if(res.result==='1'){
+                    alert('사용 가능한 아이디 입니다.');
+                }
+            },
+            error(err){
+                console.log('AJAX 실패'+err);
             }
         })
     }
@@ -189,7 +214,7 @@ export default function SignUpComponent() {
                                         </tr>
                                         <tr>
                                             <th scope='row'>회원아이디<span>*</span></th>
-                                            <td><input type="text" name="user_id" maxLength={16} onChange={onChangeId} value={state.user_id}/><button>아이디 중복체크</button></td>
+                                            <td><input type="text" name="user_id" maxLength={16} onChange={onChangeId} value={state.user_id}/><button onClick={onClickIdSearch}>아이디 중복체크</button></td>
                                         </tr>
                                         <tr>
                                             <th scope='row'>비밀번호<span>*</span></th>
