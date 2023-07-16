@@ -1,0 +1,32 @@
+<%
+    response.setHeader("Access-Control-Allow-Origin","*");
+%>
+
+
+<%@
+    page
+    language="java"
+    contentType="application/json; charset=UTF-8"
+    pageEncoding="UTF-8"
+%>
+
+<%@ page import = "user.UserDAO" %>
+
+<% 
+    request.setCharacterEncoding("UTF-8"); 
+%>
+
+<jsp:useBean id="userDTO" class="user.UserDTO" scope="page"/>
+<jsp:setProperty name="userDTO" property="user_id"/>
+
+<%
+    UserDAO userDAO = new UserDAO();
+    int result = userDAO.id_search(userDTO);
+%>
+
+
+<%
+    String jsonData = "{ \"result\": \"" + result + "\"" + "}";
+
+    response.getWriter().write(jsonData);
+%>

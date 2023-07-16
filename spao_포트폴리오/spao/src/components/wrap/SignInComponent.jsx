@@ -40,10 +40,16 @@ export default  function SignInComponent () {
             dataType:'json',
             success(res){
                 console.log(res.result);
-                if(res.result==='1'){
+                if(state.user_id===''){
+                    alert('아이디를 입력해주세요');
+                }
+                else if(state.user_pw===''){
+                    alert('비밀번호를 입력해주세요');
+                }
+                else if(res.result==='1'){
                     alert('로그인되었습니다');
                     sessionStorage.setItem('user_id',state.user_id);
-                    window.location.href='#/main';
+                    window.location.href='/';
                 }
                 else if(res.result==='-1'){
                     alert('존재하지 않는 아이디입니다.\n확인 후 다시 시도 해주세요');

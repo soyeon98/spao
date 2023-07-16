@@ -39,10 +39,10 @@ export default function HeaderComponent () {
             });
       
         });
+        getUserData();
     });
 
-    React.useEffect(()=>{
-       
+    const getUserData =()=>{
         let isLogin = false;
 
         if(sessionStorage.getItem('user_id') !==null){
@@ -52,14 +52,14 @@ export default function HeaderComponent () {
             isLogin =false;
         }
         setIsLogin(isLogin);
+    }
 
-    },[isLogin])
 
     const onClickLogout=(e)=>{
         e.preventDefault();
         sessionStorage.removeItem('user_id');
+        alert('로그아웃 되었습니다.');
         setIsLogin(false);
-        window.location.href="/";
     }
     
     return (

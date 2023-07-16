@@ -40,4 +40,62 @@ public class UserDAO {
         }
         return -1;
     }
+
+    // 아이디 중복 검사
+    public int id_search(UserDTO userDTO){
+        String SQL ="select * from spao_member where user_id=?";
+        try {
+            ps = conn.prepareStatement(SQL);
+            ps.setString(1,userDTO.getUser_id());
+
+            rs = ps.executeQuery();
+            if(rs.next()){ 
+                return -1; 
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 1;
+    }
+
+    // 로그인
+
+    public int signin(String user_id, String user_pw){
+        String SQL = "SELECT user_pw FROM spao_member WHERE user_id = ?";
+        try {
+            ps = conn.prepareStatement(SQL);
+            ps.setString(1, user_id);
+
+            rs = ps.executeQuery();
+            if(rs.next()){
+                if(rs.getString(1).equals(user_pw)){
+                    return 1;
+                }
+                else { 
+                    
+                    return 0;
+                }
+            }
+            else {
+                return -1;
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        finally{
+            try {
+                if(rs!=null){rs.close();}
+                if(ps!=null){ps.close();}
+                if(conn!=null){conn.close();}
+            }
+            catch (Exception e) {   
+                e.printStackTrace();
+            }
+        }
+        return -2;
+        
+    }
+
 }

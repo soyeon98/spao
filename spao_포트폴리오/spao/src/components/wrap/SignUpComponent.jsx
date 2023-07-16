@@ -259,12 +259,13 @@ export default function SignUpComponent() {
                     alert('중복된 아이디입니다.\n다른 아이디를 사용해주세요');
                 }
                 else if (res.result === '1') {
-                    if(state.user_id.length()<7){
+                    if(state.user_id.length<6){
                         alert('6자 이상으로 입력해주세요');
                     }
                     else{
                         alert('사용 가능한 아이디 입니다.');
                         setState({
+                            ...state,
                             isIdErr:false
                         })
                     }
@@ -298,6 +299,9 @@ export default function SignUpComponent() {
         else if(state.isPw2Err===true){
             alert('비밀번호가 같지 않습니다');
         }
+        else if(state.user_hp2===''&&state.user_hp3===''){
+            alert('핸드폰 번호 입력은 필수입니다');
+        }
         else if(state.isHp2Err===true||state.isHp3Err===true){
             alert('핸드폰 번호를 제대로 입력해 주세요');
         }
@@ -325,6 +329,8 @@ export default function SignUpComponent() {
                 success(res) {
                     console.log('AJAX 성공!');
                     console.log(res);
+                    alert('회원가입되었습니다.');
+                    window.location.href='#/signin';
                 },
                 error(err) {
                     console.log('AJAX 실패!' + err);
