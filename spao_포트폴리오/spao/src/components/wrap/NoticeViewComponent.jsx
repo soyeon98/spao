@@ -103,12 +103,12 @@ export default function NoticeViewComponent  ()  {
                                 <li style={{"display":`${notice.no===15?"none":"flex"}`}}>
                                     <span>이전글</span>
                                     <i>|</i>
-                                    <Link to={`/noticeView?listNum=${notice.no+1}`}>{prev.subject}</Link>
+                                    <Link to={`/noticeView?listNum=${notice.no-1}`}>{prev.subject}</Link>
                                 </li>
                                 <li style={{"display":notice.no===1?"none":"flex","border-top":notice.no===15?"1px solid #e5e5e5":"0"}}>
                                     <span>다음글</span>
                                     <i>|</i>
-                                    <Link to={`/noticeView?listNum=${notice.no-1}`}>{next.subject}</Link>
+                                    <Link to={`/noticeView?listNum=${notice.no+1}`}>{next.subject}</Link>
                                 </li>
                             </ul>
                         </div>
