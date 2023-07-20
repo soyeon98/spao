@@ -11,6 +11,7 @@ import SignInComponent from './SignInComponent';
 import NoticeComponent from './NoticeComponent';
 import NoticeViewComponent from './NoticeViewComponent';
 import ProductDetailComponent from './ProductDetailComponent';
+import RecentComponent from './mypage/RecentComponent';
 
 export default function IntroComponent  ({setViewProduct})  {
     return (
@@ -26,6 +27,7 @@ export default function IntroComponent  ({setViewProduct})  {
                 <Route path='/signin' element={<SignInComponent/>} />
                 <Route path='/notice' element={<NoticeComponent/>} />
                 <Route path='/noticeView' element={<NoticeViewComponent/>} />
+                <Route path='/recent' element={<RecentComponent/>}/>
             </Routes>
             <FooterComponent/>
             <GoUpDownComponent/>

@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import { Link } from 'react-router-dom';
 
 export default function GoUpDownComponent(){
 
@@ -36,6 +37,11 @@ export default function GoUpDownComponent(){
 
     return(
         <div id='upDown'>
+            <div id="recent">
+                <Link to="/recent" className='recent-btn' >
+                    <img src="./img/quick_today.png" alt="" />
+                </Link>
+            </div>
             <div id="goTop">
                 <a href="!#" className='gotop-btn'>
                     <img src="./img/main/q_r_top.png" alt="" />
