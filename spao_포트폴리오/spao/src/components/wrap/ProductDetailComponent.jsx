@@ -1,11 +1,7 @@
 import React from 'react';
-// import { useParams } from 'react-router-dom';
 
 export default function ProductDetailComponent ({setViewProduct}){
 
-
-
-    // const {id} = useParams();
 
     const [state,setState]=React.useState({
         product:{},
