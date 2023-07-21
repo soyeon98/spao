@@ -9,10 +9,10 @@ public class UserDAO {
 
     public UserDAO(){
         try {
-            String URL ="jdbc:mysql://localhost:3306/spao";
-            String DBID ="root";
-            String DBPW ="1234";
-            Class.forName("com.mysql.jdbc.Driver");
+            String URL ="jdbc:mariadb://localhost:3306/qkrthdus212";
+            String DBID ="qkrthdus212";
+            String DBPW ="qkrthdus98";
+            Class.forName("org.mariadb.jdbc.Driver");
             conn = DriverManager.getConnection(URL, DBID, DBPW);
         } catch (Exception e) {
             e.printStackTrace();

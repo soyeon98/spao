@@ -1,94 +1,93 @@
 #recentProduct{
     width: 100%;
-    padding: 90px 0 100px 0;
-    .container{
+   padding: 90px 0 100px 0;
+   .container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    .gap{
         width: 100%;
-        max-width: 1440px;
-        margin: 0 auto;
-        .gap{
+        .title{
             width: 100%;
-            .title{
-                width: 100%;
-                text-align: center;
-                padding: 50px 0;
-                h1{
-                    color: #1a1a1a;
-                    font-size: 42px;
-                    font-weight: 500;
-                }
+            text-align: center;
+            padding: 50px 0;
+            h1{
+                color: #1a1a1a;
+                font-size: 42px;
+                font-weight: 500;
             }
-            .content{
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                .left{
-                    width: 15%;
-                    padding: 0 20px 0 0;
-                    .up{
-                        padding: 0 0 10px 0;
-                        border-bottom: 2px solid #1a1a1a;
-                        h3{
-                            font-size: 20px;
-                            color: #1a1a1a;
-                            font-weight: 500;
-                        }
+        }
+        .content{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .left{
+                width: 15%;
+                padding: 0 20px 0 0;
+                .up{
+                    padding: 0 0 10px 0;
+                    border-bottom: 2px solid #1a1a1a;
+                    h3{
+                        font-size: 20px;
+                        color: #1a1a1a;
+                        font-weight: 500;
                     }
-                    .bottom{
-                        
-                        ul{
-                            padding: 30px 0 0 0;
-                            li{
-                                font-size: 16px;
-                                font-weight: 500;
-                                color: #1a1a1a;
+                }
+                .bottom{
+                    
+                    ul{
+                        padding: 30px 0 0 0;
+                        li{
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #1a1a1a;
+                            line-height: 33px;
+                          
+                            a{
+                                position: relative;
+                                display: inline-flex;
+                                color: #707070;
+                                font-size: 14px;
                                 line-height: 33px;
-                              
-                                a{
-                                    position: relative;
-                                    display: inline-flex;
-                                    color: #707070;
-                                    font-size: 14px;
-                                    line-height: 33px;
+                                transition: all 0.3s;
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    z-index: 1;
+                                    top: 3px;
+                                    right: -1px;
+                                    width: 7px;
+                                    height: 7px;
+                                    background: #c41e20;
+                                    border-radius: 50%;
+                                    opacity: 0;
                                     transition: all 0.3s;
+                                }
+                                &:hover{
+                                    color: #1a1a1a;
                                     &::after{
-                                        content: '';
-                                        position: absolute;
-                                        z-index: 1;
-                                        top: 3px;
-                                        right: -1px;
-                                        width: 7px;
-                                        height: 7px;
-                                        background: #c41e20;
-                                        border-radius: 50%;
-                                        opacity: 0;
-                                        transition: all 0.3s;
-                                    }
-                                    &:hover{
-                                        color: #1a1a1a;
-                                        &::after{
-                                            top: 1px;
-                                            right: -10px;
-                                            opacity: 1;
-                                        }
+                                        top: 1px;
+                                        right: -10px;
+                                        opacity: 1;
                                     }
                                 }
-
                             }
+
                         }
                     }
                 }
-                .right{
-                    width: 80%;
-                    margin: 30px 0 0 0;
-                    border-top: 2px solid #1a1a1a;
-                    table{
-                        tr{
-                            th{}
-                            td{
-                                a{
-                                    img{
-                                        width: 78px;
-                                    }
+            }
+            .right{
+                width: 80%;
+                margin: 30px 0 0 0;
+                border-top: 2px solid #1a1a1a;
+                table{
+                    tr{
+                        th{}
+                        td{
+                            a{
+                                img{
+                                    width: 78px;
                                 }
                             }
                         }
@@ -97,5 +96,6 @@
             }
         }
     }
+}
 
 }

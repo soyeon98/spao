@@ -51,23 +51,6 @@ export default function NoticeViewComponent  ()  {
         window.location.href="/#/notice";
     }
 
-    // const onClickPrev =(e)=>{
-    //     e.preventDefault();
-    //     window.location.href=`/!#/noticeView?ListNum=${Number(listNum)-1}`;
-    //     setState({
-    //         ...state,
-    //         notice:prev
-    //     })
-    // }
-    // const onClickNext =(e)=>{
-    //     e.preventDefault();
-    //     window.location.href=`/!#/noticeView?ListNum=${Number(listNum)+1}`;
-    //     setState({
-    //         ...state,
-    //         notice:next
-    //     })
-    // }
-
     return(
         <div id='noticeView'>
             <div className="container">

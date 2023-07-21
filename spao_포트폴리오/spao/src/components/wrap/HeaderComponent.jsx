@@ -54,6 +54,12 @@ export default function HeaderComponent () {
         setIsLogin(isLogin);
     }
 
+    React.useEffect(() => {
+        if(isLogin === true){
+            getUserData();
+        }
+    }, [isLogin])
+
 
     const onClickLogout=(e)=>{
         e.preventDefault();

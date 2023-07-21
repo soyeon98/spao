@@ -34,7 +34,7 @@ export default function SignUpComponent() {
     });
     const onClickMain = (e) => {
         e.preventDefault();
-        window.location.href = "/main";
+        window.location.href = "#/main";
     }
 
     const onChangeName = (e) => {
@@ -249,7 +249,7 @@ export default function SignUpComponent() {
             "user_id": state.user_id
         }
         $.ajax({
-            url: 'http://localhost:8080/JSP/spao/idsearch_action.jsp',
+            url: 'http://qkrthdus212.cafe24.com/JSP/spao/idsearch_action.jsp',
             type: 'POST',
             data: formData,
             dataType: 'json',
@@ -323,7 +323,7 @@ export default function SignUpComponent() {
                 "user_receive": state.user_receive1 + "," + state.user_receive2 + "," + state.user_receive3 + "," + state.user_receive4,
             }
             $.ajax({
-                url: 'http://localhost:8080/JSP/spao/signup_action.jsp',
+                url: 'http://qkrthdus212.cafe24.com/JSP/spao/signup_action.jsp',
                 type: 'POST',
                 data: formData,
                 success(res) {

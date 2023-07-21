@@ -34,7 +34,7 @@ export default  function SignInComponent () {
             "user_pw":state.user_pw
         }
         $.ajax({
-            url: 'http://localhost:8080/JSP/spao/signin_action.jsp',
+            url: 'http://qkrthdus212.cafe24.com/JSP/spao/signin_action.jsp',
             type: 'POST',
             data: formData,
             dataType:'json',
@@ -49,7 +49,7 @@ export default  function SignInComponent () {
                 else if(res.result==='1'){
                     alert('로그인되었습니다');
                     sessionStorage.setItem('user_id',state.user_id);
-                    window.location.href='/';
+                    window.location.href='#/';
                 }
                 else if(res.result==='-1'){
                     alert('존재하지 않는 아이디입니다.\n확인 후 다시 시도 해주세요');
