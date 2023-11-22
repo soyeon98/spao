@@ -2,3 +2,34 @@
   width: 100%;
   padding: 90px 0 100px 0;
 }
+#recentProduct .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#recentProduct .container .gap {
+  width: 100%;
+}
+#recentProduct .container .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+#recentProduct .container .gap .title h1 {
+  color: #1a1a1a;
+  font-size: 42px;
+  font-weight: 500;
+}
+#recentProduct .container .gap .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#recentProduct .container .gap .content .right {
+  width: 80%;
+  margin: 30px 0 0 0;
+  border-top: 2px solid #1a1a1a;
+}
+#recentProduct .container .gap .content .right table tr td a img {
+  width: 78px;
+}

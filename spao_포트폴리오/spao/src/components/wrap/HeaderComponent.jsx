@@ -380,7 +380,10 @@ export default function HeaderComponent () {
                                         }
                                         {
                                             isLogin&&(
-                                                <li><Link to="/signin" onClick={onClickLogout}>LOGOUT</Link></li>
+                                                <>
+                                                    <li><Link to="/signin" onClick={onClickLogout}>LOGOUT</Link></li>
+                                                    <li><Link to="/mypage">MYPAGE</Link></li>
+                                                </>
                                             )
                                         }
                                         <li><a href="!#">ORDER</a></li>

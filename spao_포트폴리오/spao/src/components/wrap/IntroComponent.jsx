@@ -12,6 +12,7 @@ import NoticeComponent from './NoticeComponent';
 import NoticeViewComponent from './NoticeViewComponent';
 import ProductDetailComponent from './ProductDetailComponent';
 import RecentComponent from './mypage/RecentComponent';
+import MypageComponent from './mypage/MypageComponent';
 
 export default function IntroComponent  ({setViewProduct})  {
     return (
@@ -28,6 +29,7 @@ export default function IntroComponent  ({setViewProduct})  {
                 <Route path='/notice' element={<NoticeComponent/>} />
                 <Route path='/noticeView' element={<NoticeViewComponent/>} />
                 <Route path='/recent' element={<RecentComponent/>}/>
+                <Route path='/mypage' element={<MypageComponent/>}/>
             </Routes>
             <FooterComponent/>
             <GoUpDownComponent/>
