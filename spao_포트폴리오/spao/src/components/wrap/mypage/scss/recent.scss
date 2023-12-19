@@ -36,13 +36,69 @@
                     margin: 30px 0 0 0;
                     border-top: 2px solid #1a1a1a;
                     table{
+                        width: 100%;
+                        border-collapse: collapse;
                         tr{
-                            th{}
+                            th{
+                                font-size: 16px;
+                                color: #333;
+                                font-weight: 400;
+                                padding: 22px 0;
+                                border-bottom: 1px solid #e5e5e5;
+                            }
                             td{
+                                padding: 24px 22px;
+                                border-bottom: 1px solid #e5e5e5;
+                                
                                 a{
+                                    font-size: 14px;
+                                    color: #1a1a1a;
+
                                     img{
                                         width: 78px;
                                     }
+                                }
+                                button{
+                                    width: 80px;
+                                    background: #fff;
+                                    border: 1px solid #d9d9d9;
+                                    padding: 6px 0;
+                                    font-size: 14px;
+                                    margin: 2px 0;
+                                }
+                                .origin{
+                                    font-size: 14px;
+                                    color: #1a1a1a;
+                                    text-decoration: line-through;
+                                }
+                                .sale{
+                                    font-size: 14px;
+                                    color: #111;
+                                    font-weight: 600;
+                                    padding: 5px 0 0 0;
+                                }
+                                span{
+                                    font-size: 14px;
+                                    color: #1a1a1a;
+                                    margin: 0 5px 0 0;
+                                }
+                                .point{
+                                    display: flex;
+                                    align-items: center;
+                                    img{
+                                        margin: 0 5px 0 0;
+                                    }
+                                }
+                                select{
+                                    font-size: 14px;
+                                    border: 0;
+                                    border-bottom: 1px solid #d9d9d9;
+                                    padding: 10px 10px;
+                                    color: #909090;
+                                    outline: 0;
+                                }
+                                &:last-child{
+                                    width: 80px;
                                 }
                             }
                         }
