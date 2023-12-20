@@ -1,0 +1,198 @@
+#mypageIntro {
+  width: 100%;
+  padding: 90px 0 100px 0;
+}
+#mypageIntro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #aaa;
+  z-index: 1;
+}
+#mypageIntro .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#mypageIntro .container .gap {
+  width: 100%;
+}
+#mypageIntro .container .gap .link-box {
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto;
+}
+#mypageIntro .container .gap .link-box ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#mypageIntro .container .gap .link-box ul li {
+  padding: 0 0 0 12px;
+  margin: 0 0 0 8px;
+  font-size: 13px;
+  color: #909090;
+  line-height: 30px;
+}
+#mypageIntro .container .gap .link-box ul li a {
+  font-size: 13px;
+  color: #909090;
+}
+#mypageIntro .container .gap .link-box ul li:nth-child(2), #mypageIntro .container .gap .link-box ul li:nth-child(3) {
+  background: url(../../../../../public/img/sale/ico_path.gif) no-repeat 0 50%;
+}
+#mypageIntro .container .gap .title {
+  width: 100%;
+  padding: 50px 0 60px 0;
+}
+#mypageIntro .container .gap .title h3 {
+  font-size: 20px;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 0 0 10px 0;
+}
+#mypageIntro .container .gap .title .rank-box {
+  width: 100%;
+  height: 160px;
+  background: #303e47;
+}
+#mypageIntro .container .gap .title .rank-box > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#mypageIntro .container .gap .title .rank-box > ul li {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid #45525a;
+  flex-wrap: wrap;
+}
+#mypageIntro .container .gap .title .rank-box > ul li h4 {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 500;
+}
+#mypageIntro .container .gap .title .rank-box > ul li p {
+  width: 100%;
+  font-size: 16px;
+}
+#mypageIntro .container .gap .title .rank-box > ul li a {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  color: #909090;
+}
+#mypageIntro .container .gap .title .rank-box > ul li h5 {
+  width: 100%;
+  font-size: 24px;
+  padding: 15px 0 0 0;
+}
+#mypageIntro .container .gap .title .rank-box > ul li:first-child {
+  text-align: start;
+  border: 0;
+  padding: 40px 0 50px 30px;
+}
+#mypageIntro .container .gap .title .rank-box > ul li:first-child p {
+  padding: 15px 0 8px 0;
+}
+#mypageIntro .container .gap .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#mypageIntro .container .gap .content .right {
+  width: 100%;
+  max-width: 1165px;
+}
+#mypageIntro .container .gap .content .right .up {
+  width: 100%;
+}
+#mypageIntro .container .gap .content .right .up .up-title {
+  width: 100%;
+  border-bottom: 2px solid #1a1a1a;
+  padding: 0 0 10px 0;
+}
+#mypageIntro .container .gap .content .right .up .up-title p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+#mypageIntro .container .gap .content .right .up .up-title p span {
+  font-size: 14px;
+  color: #707070;
+  padding: 0 0 0 5px;
+}
+#mypageIntro .container .gap .content .right .up .up-content {
+  width: 100%;
+  padding: 30px 0;
+}
+#mypageIntro .container .gap .content .right .up .up-content > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 160px;
+  background: #f7f7f7;
+  text-align: center;
+}
+#mypageIntro .container .gap .content .right .up .up-content > ul > li {
+  width: 100%;
+  font-size: 12px;
+  color: #707070;
+}
+#mypageIntro .container .gap .content .right .up .up-content > ul > li > span {
+  font-size: 24px;
+  color: #1a1a1a;
+  font-weight: 500;
+  display: block;
+  padding: 10px 0 0 0;
+  letter-spacing: 1px;
+}
+#mypageIntro .container .gap .content .right .bottom {
+  width: 100%;
+}
+#mypageIntro .container .gap .content .right .bottom .bottom-title {
+  width: 100%;
+  border-bottom: 2px solid #1a1a1a;
+  padding: 0 0 10px 0;
+}
+#mypageIntro .container .gap .content .right .bottom .bottom-title p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+#mypageIntro .container .gap .content .right .bottom .bottom-content {
+  width: 100%;
+}
+#mypageIntro .container .gap .content .right .bottom .bottom-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#mypageIntro .container .gap .content .right .bottom .bottom-content table tr {
+  width: 100%;
+}
+#mypageIntro .container .gap .content .right .bottom .bottom-content table tr th {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 22px 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+}
+#mypageIntro .container .gap .content .right .bottom .bottom-content table tr th:nth-child(2) {
+  padding: 0 80px 0 30px;
+}
+#mypageIntro .container .gap .content .right .bottom .bottom-content table tr td {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 100px 0;
+  color: #909090;
+}

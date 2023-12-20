@@ -38,6 +38,11 @@
                     table{
                         width: 100%;
                         border-collapse: collapse;
+                        .no-product{
+                            width: 100%;
+                            text-align: center;
+                            padding: 30px;
+                        }
                         tr{
                             th{
                                 font-size: 16px;
@@ -49,10 +54,10 @@
                             td{
                                 padding: 24px 22px;
                                 border-bottom: 1px solid #e5e5e5;
-                                
                                 a{
                                     font-size: 14px;
                                     color: #1a1a1a;
+                                    word-break: keep-all;
 
                                     img{
                                         width: 78px;
@@ -80,7 +85,7 @@
                                 span{
                                     font-size: 14px;
                                     color: #1a1a1a;
-                                    margin: 0 5px 0 0;
+                                    // margin: 0 5px 0 0;
                                 }
                                 .point{
                                     display: flex;
@@ -93,7 +98,7 @@
                                     font-size: 14px;
                                     border: 0;
                                     border-bottom: 1px solid #d9d9d9;
-                                    padding: 10px 10px;
+                                    padding: 10px 0 10px 5px;
                                     color: #909090;
                                     outline: 0;
                                 }

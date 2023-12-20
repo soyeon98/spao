@@ -37,7 +37,7 @@
   display: block;
 }
 #wrap #header .container .gap .left .logo a img {
-  width: auto;
+  width: 100%;
 }
 #wrap #header .container .gap .center {
   width: 1180px;
@@ -297,7 +297,7 @@
 }
 #wrap #header:hover .container .gap .left .logo a, #wrap #header.on .container .gap .left .logo a {
   background: url(../img/header/logo_red.png) no-repeat 50% 50%;
-  background-size: cover;
+  background-size: contain;
 }
 #wrap #header:hover .container .gap .left .logo a img, #wrap #header.on .container .gap .left .logo a img {
   display: none;

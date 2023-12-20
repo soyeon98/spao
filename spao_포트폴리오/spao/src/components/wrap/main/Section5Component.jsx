@@ -36,7 +36,7 @@ export default function Section5Component({setViewProduct}) {
         let obj = {
             제품코드: item.제품코드,
             이미지: `./img/main/${item.이미지}`,
-            제품명: item.상품명,
+            제품명: item.제품명,
             성별: item.성별,
             판매가: Math.round(item.정가 * (1 - item.할인율)),
             할인율: (item.할인율)*100,
@@ -179,15 +179,15 @@ export default function Section5Component({setViewProduct}) {
                         </div>
                         <div className="prev-btn"><a href="!#"><img src="./img/main/left-arrow.png" alt="" /></a></div>
                         <div className="next-btn"><a href="!#"><img src="./img/main/right-arrow.png" alt="" /></a></div>
-                        <div class="page-btn-box">
-                            <span><a href="!#" class="page-btn blind on">페이지1</a></span>
-                            <span><a href="!#" class="page-btn blind">페이지2</a></span>
-                            <span><a href="!#" class="page-btn blind">페이지3</a></span>
-                            <span><a href="!#" class="page-btn blind">페이지4</a></span>
-                            <span><a href="!#" class="page-btn blind">페이지5</a></span>
-                            <span><a href="!#" class="page-btn blind">페이지6</a></span>
-                            <span><a href="!#" class="page-btn blind">페이지7</a></span>
-                            <span><a href="!#" class="page-btn blind">페이지8</a></span>
+                        <div className="page-btn-box">
+                            <span><a href="!#" className="page-btn blind on">페이지1</a></span>
+                            <span><a href="!#" className="page-btn blind">페이지2</a></span>
+                            <span><a href="!#" className="page-btn blind">페이지3</a></span>
+                            <span><a href="!#" className="page-btn blind">페이지4</a></span>
+                            <span><a href="!#" className="page-btn blind">페이지5</a></span>
+                            <span><a href="!#" className="page-btn blind">페이지6</a></span>
+                            <span><a href="!#" className="page-btn blind">페이지7</a></span>
+                            <span><a href="!#" className="page-btn blind">페이지8</a></span>
                         </div>
                     </div>
                 </div>

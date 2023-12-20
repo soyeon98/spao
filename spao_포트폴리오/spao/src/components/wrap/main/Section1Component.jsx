@@ -160,9 +160,9 @@ export default function section1Component() {
                         </div>
                         <a href="!#" className='prev-btn-s1'><i></i></a>
                         <a href="!#" className='next-btn-s1'><i></i></a>
-                        <div class="page-btn-box">
-                            <span><a href="!#" class="page-btn blind on">페이지1</a></span>
-                            <span><a href="!#" class="page-btn blind">페이지2</a></span>
+                        <div className="page-btn-box">
+                            <span><a href="!#" className="page-btn blind on">페이지1</a></span>
+                            <span><a href="!#" className="page-btn blind">페이지2</a></span>
                         </div>
                     </div>
                 </div>
